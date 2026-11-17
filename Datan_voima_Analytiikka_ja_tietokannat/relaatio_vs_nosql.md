@@ -148,6 +148,12 @@ NoSQL-järjestelmiä käytetään lähes kaikilla aloilla. Niitä käytetään e
 
 ### 4.4. Hyödyt ja mahdollisuudet
 
+#### 4.4.1. Relaatiotietokantojen edut
+
+Relaatiotietokantojen etuja ovat esimerkiksi useita rivejä koskevien transaktioiden yhdenmukaisuus, monimutkaiset taulukoiden yhdistämiset, luotettavat säännöt tietojen välisten suhteiden eheydelle sekä kehittyneet työkalut raportointiin, ylläpitoon ja tietojen hallintaan.
+
+SQL-tietokannoilla on pitkä historia. Siksi niillä on suuret käyttäjäyhteisöt, ja internetistä löytyy paljon esimerkkejä toimivasta ja vakaasta ohjelmakoodista.
+
 
 ### 4.5. Haasteet, riskit ja rajoitukset
 
