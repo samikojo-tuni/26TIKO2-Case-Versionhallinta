@@ -1,6 +1,4 @@
-## 1. Pääotsikko
-
-Artikkelin otsikko, joka kertoo selkeästi, mitä aihetta artikkelissa käsitellään.
+## 1. SQL VS NOSQL
 
 ## 2. Johdanto
 
@@ -134,8 +132,6 @@ Yksi tietokanta ei yleensä sovi yhtä hyvin kaikkiin tiedon käyttötapoihin. M
 ### 4.3. Käyttökohteet
 
 #### 4.3.1. Milloin SQL kannattaa valita
-<<<<<<< HEAD
-=======
 
 SQL on hyvä valinta, kun tiedot liittyvät vahvasti toisiinsa. Relaatiotietokannat ovat tehokkaita ja joustavia, ja niitä voidaan käyttää monenlaisissa sovelluksissa. Yksi niiden eduista on, että ne auttavat säilyttämään tietojen eheyden myös päivitysten aikana. Jos tietokannasta on useita kopioita eli replikoita, muutosten siirtymisnopeus niiden välillä riippuu järjestelmän asetuksista.
 
@@ -146,36 +142,232 @@ Suurten rakenteettomien tietomäärien tallentamiseen voivat sopia dokumenttitie
 Myös esimerkiksi Facebookin kehittämä Cassandra pystyy käsittelemään erittäin suuria tietomääriä, jotka on jaettu monelle palvelimelle. Se voi poistaa yksittäisen vikaantumispisteen ja parantaa järjestelmän saatavuutta.
 
 NoSQL-järjestelmiä käytetään lähes kaikilla aloilla. Niitä käytetään esimerkiksi reaaliaikaisessa analytiikassa, sisällönhallinnassa, esineiden internetin (IoT) sovelluksissa, suosittelujärjestelmissä, petosten tunnistamisessa ja tuotekatalogien hallinnassa.
->>>>>>> 5b651fd43bd1ea475a53463bd79a0ba8eb260bd9
 
 SQL on hyvä valinta, kun tiedot liittyvät vahvasti toisiinsa. Relaatiotietokannat ovat tehokkaita ja joustavia, ja niitä voidaan käyttää monenlaisissa sovelluksissa. Yksi niiden eduista on, että ne auttavat säilyttämään tietojen eheyden myös päivitysten aikana. Jos tietokannasta on useita kopioita eli replikoita, muutosten siirtymisnopeus niiden välillä riippuu järjestelmän asetuksista.
 
 ### 4.4. Hyödyt ja mahdollisuudet
 
+#### 4.4.1. Relaatiotietokantojen edut
+
+Relaatiotietokantojen etuja ovat esimerkiksi useita rivejä koskevien transaktioiden yhdenmukaisuus, monimutkaiset taulukoiden yhdistämiset, luotettavat säännöt tietojen välisten suhteiden eheydelle sekä kehittyneet työkalut raportointiin, ylläpitoon ja tietojen hallintaan.
+
+SQL-tietokannoilla on pitkä historia. Siksi niillä on suuret käyttäjäyhteisöt, ja internetistä löytyy paljon esimerkkejä toimivasta ja vakaasta ohjelmakoodista.
+
+#### 4.4.2. Eri NoSQL-mallien edut
+
+NoSQL-järjestelmästä riippuen mahdollisia etuja ovat:
+
+- Hajautettu tietojenkäsittely.
+- Hyvä skaalautuvuus.
+- Joustavat tietorakenteet ja monipuoliset kyselykielet.
+- Helppokäyttöisyys kehittäjille.
+- Verkkoyhteyden katkeamisen sietäminen.
+- Korkea saatavuus.
+- Joissakin järjestelmissä BASE-periaatteiden käyttö.
+
 
 ### 4.5. Haasteet, riskit ja rajoitukset
 
+#### 4.5.1. Tietomallien rajoitukset
 
+On tärkeää huomioida, että horisontaalinen skaalaus vaatii usein tietojen jakamista osiin (*sharding*). Relaatiotietokantojen normalisointi taas voi tehdä taulukoiden yhdistämisestä raskaampaa, jos samoja tietoja luetaan usein. Joskus tiedot olisi helpompi hakea denormalisoidusta rakenteesta, jossa niitä ei ole jaettu niin moneen taulukkoon.
+
+Ei-relationaaliset eli NoSQL-tietokannat on usein suunniteltu joustavia tietorakenteita, horisontaalista skaalausta sekä tiettyjä haku- ja käsittelytapoja varten. Joustavuuden ja skaalautuvuuden vuoksi niissä voidaan käyttää väljempiä sääntöjä kuin relaatiotietokannoissa. Tämä voi koskea esimerkiksi tietojen rakennetta tai transaktioiden laajuutta.
+
+**Dokumenttimalli (Document)**
+
+Dokumentit voivat kasvaa suuriksi. Joissakin järjestelmissä transaktioilla on rajoituksia. Lisäksi tietojen rakenne pitää suunnitella huolellisesti, jos kyselyitä tehdään paljon.
+
+**Sarakeperheet (Column-family)**
+
+Rivien avaimet ja sarakeperheet pitää suunnitella etukäteen. Toissijaisten indeksien tuki vaihtelee, ja kyselyiden tekeminen voi olla vähemmän joustavaa kuin relaatiomallissa.
+
+**Avain–arvo-malli (Key-value)**
+
+Kyselymahdollisuudet ovat rajalliset. Jos tietoa halutaan hakea arvon perusteella, tietomallia voidaan joutua muuttamaan. Suurten arvojen kirjoittaminen uudelleen voi myös olla raskasta.
+
+**Graafimalli (Graph)**
+
+Yksinkertaisten suhteiden käsittelyyn voi kulua turhaan resursseja. Malli vaatii huolellista suunnittelua, eikä suurten tietomäärien laaja analysointi ole aina helppoa.
+
+#### 4.5.2. Useiden teknologioiden yhdistämisen ongelmat
+
+Järjestelmää ei kannata jakaa liian aikaisin moniin eri tietokantoihin:
+
+- Käytä yhtä palvelua niin kauan kuin se täyttää suorituskyvyn, skaalautuvuuden ja hallinnan vaatimukset.
+- Pidä tietojen luokittelun yhteiset säännöt yhdessä paikassa. Vältä myös turhaa tietojen muuntamista ja saman työn tekemistä useissa tietokannoissa.
+
+Seuraavia yleisiä ongelmia kannattaa välttää:
+
+- Useat mikropalvelut käyttävät samaa yhteistä tietokantaa, jolloin ne tulevat liian riippuvaisiksi toisistaan.
+- Tiimi ottaa käyttöön uuden tallennusmallin, vaikka ylläpitokäytännöt, esimerkiksi valvonta ja varmuuskopiointi, eivät ole vielä riittävän hyviä.
+- Hakemistoa käytetään varsinaisena tietovarastona, vaikka sitä ei ole suunniteltu siihen.
+
+#### 4.5.3. Yleisiä väärinkäsityksiä NoSQL:stä
+
+**NoSQL-tietokannat sopivat huonosti toisiinsa liittyville tiedoille.**
+NoSQL-tietokannat pystyvät tallentamaan myös tietojen välisiä suhteita. Ne vain tekevät sen eri tavalla kuin relaatiotietokannat. Monien mielestä toisiinsa liittyvien tietojen mallintaminen voi olla NoSQL:ssä jopa helpompaa, koska tietoja ei aina tarvitse jakaa useaan taulukkoon. Sen sijaan liittyvät tiedot voidaan tallentaa samaan rakenteeseen.
+
+**NoSQL-tietokannat eivät tue ACID-transaktioita.**
+Todellisuudessa jotkin NoSQL-järjestelmät, esimerkiksi MongoDB, tukevat ACID-transaktioita.
 
 ## 5. Esimerkki
 
 ### 5.1. Tilanteen kuvaus
 
+Erilaiset tietokannat järjestävät ja tallentavat tietoa eri tavoilla. Jotta erot olisi helpompi ymmärtää, tarkastellaan viittä yksinkertaista esimerkkiä: yhtä SQL-relaatiotietokantaa ja neljää NoSQL-tietokantojen päätyyppiä.
+
+Esimerkit näyttävät, millaisia tietoja eri malleihin on kätevää tallentaa ja miltä tietojen rakenne voi näyttää.
 
 
 ### 5.2. Ratkaisu tai toimintatapa
+tämä on hienoa tärkeää tekstiä jota meidän pitää pitää osana meidän textiä.
+    SQL pystyy hakemaan tietojaan todella nopeasti oman takenteensa ansiosta, mutta samalla tarvitsee kyseistä rakennetta toimiakseen. Tämä johtaa ongelmiin kun eri SQL mallit usein käyttävät erilaisia rakenteita, joka tekee eri työkalujen kanssa työskentelystä paljon hankalampaa. miksi minä tänne kirjoitan?
+    NOSQL puolestaan pystyy toimimaan todella helposti ja lähes millä tahansa koolla ilman ongelmia, koska rajallisen rakenteen pois jättäminen jättää tilaa laajentamiselle ja vapauksille mitä aikaisempi rakenne ei olisi hyväksynyt. Tässä kuitenkin on huonojakin puolia, koska tieto voi olla niin laajaa ja ei välttämättä sisällä yhtään rakennetta tietojen järjestely, hakeminen ja etsiminen on paljon hitaampaa verrattuna SQL. mitä on meneillään?
 
 
-### 5.3. Tulokset ja havainnot
 
+#### 5.2.1. Relaatiotietokanta (Relational Database, SQL)
 
+**Esimerkki: käyttäjät ja heidän harrastuksensa**
+
+Tarkastellaan tilannetta, jossa haluamme tallentaa käyttäjän tiedot ja harrastukset. Tallennettavia tietoja ovat etunimi, sukunimi, puhelinnumero, kaupunki ja harrastusten lista.
+
+Relaatiotietokannan hallintajärjestelmässä (RDBMS) tekisimme todennäköisesti kaksi taulukkoa: yhden käyttäjille (Users) ja toisen harrastuksille (Hobbies). Jos haluamme saada kaikki käyttäjän tiedot ja harrastukset, meidän pitää yhdistää näiden kahden taulukon tiedot.
+
+**Käyttäjien taulukko (User table)**
+
+| ID | first_name | last_name | cell | city |
+|---|---|---|---|---|
+| 1 | Leslie | Yepp | 8125552344 | Pawnee |
+
+**Harrastusten taulukko (Hobbies table)**
+
+| ID | user_id | hobby |
+|---|---|---|
+| 10 | 1 | scrapbooking |
+| 11 | 1 | eating waffles |
+| 12 | 1 | working |
+
+Kenttä `user_id` yhdistää harrastukset ensimmäisen taulukon käyttäjään.
+
+Jotta saamme käyttäjän tiedot ja harrastukset yhdessä, meidän pitää yhdistää taulukot `JOIN`-toiminnolla.
+
+#### 5.2.2. Dokumenttitietokanta (Document Database)
+
+**Esimerkki: käyttäjäprofiili**
+
+NoSQL-tietokannan tietomalli riippuu siitä, minkä tyyppisen tietokannan valitsemme. Katsotaan, miten samat käyttäjän tiedot ja harrastukset voidaan tallentaa dokumenttitietokantaan, esimerkiksi MongoDB:hen.
+
+```json
+{
+  "_id": 1,
+  "first_name": "Leslie",
+  "last_name": "Yepp",
+  "cell": "8125552344",
+  "city": "Pawnee",
+  "hobbies": [
+    "scrapbooking",
+    "eating waffles",
+    "working"
+  ]
+}
+```
+
+Kaikki käyttäjän tiedot ja harrastukset voidaan hakea yhdestä dokumentista. Taulukoita ei tarvitse yhdistää. Tässä esimerkissä toisiinsa liittyvien tietojen hakeminen voi olla helpompaa ja nopeampaa, mutta todellinen suorituskyky riippuu tietojen rakenteesta ja kyselyiden tyypistä.
+
+#### 5.2.3. Avain–arvo-tietokanta (Key-Value Database)
+
+**Esimerkki: polkupyörän nimen tallentaminen**
+
+Avain–arvo-tietokannassa jokaisella yksilöllisellä avaimella on siihen liittyvä arvo.
+
+| Avain (Key) | Arvo (Value) |
+|---|---|
+| `bike:1` | `Deimos` |
+
+Redisissä tiedon voi tallentaa ja hakea yksinkertaisilla komennoilla:
+
+```text
+SET bike:1 Deimos
+GET bike:1
+```
+
+Tulos:
+
+```text
+"Deimos"
+```
+
+Arvon hakemista varten täytyy tietää sen avain. Tämä malli sopii nopeaan tiedonhakuun, esimerkiksi välimuistiin tai käyttäjäistuntojen tallentamiseen.
+
+#### 5.2.4. Laajasarakkeinen tietokanta (Wide-Column Database)
+
+**Esimerkki: ystävät ja sosiaaliset ryhmät**
+
+Laajasarakkeinen tietokanta tallentaa tiedot riveihin ja sarakkeisiin, mutta eri riveillä voi olla eri sarakkeita.
+
+Voimme esimerkiksi tallentaa tiedon siitä, miten eri ihmiset tuntevat ystävänsä.
+
+| Käyttäjä | Fred | Gabriel | Hiroshi | Seo Yoon | Jakob |
+|---|---|---|---|---|---|
+| Jose | book-club | work | tennis | | |
+| Sofia | | | work | school | chess-club |
+
+Tässä taulukossa:
+
+- Jose tuntee Fredin kirjakerhosta (*book-club*).
+- Jose tuntee Gabrielin työn kautta (*work*).
+- Sofia tuntee Seo Yoonin koulusta (*school*).
+- Sofia tuntee Jakobin shakkikerhosta (*chess-club*).
+
+Tavallisesta relaatiotaulukosta poiketen laajasarakkeinen malli sallii sen, että eri riveillä on eri sarakkeita.
+
+Malli sopii suuriin ja harvoihin tietoaineistoihin, joissa eri kohteilla voi olla paljon erilaisia ominaisuuksia ja monia tyhjiä kenttiä.
+
+#### 5.2.5. Graafitietokanta (Graph Database)
+
+**Esimerkki: näyttelijät ja elokuvat**
+
+Graafitietokanta tallentaa tiedot solmuina (*nodes*) ja niiden välisinä yhteyksinä (*relationships*).
+
+Esimerkiksi näyttelijät ja elokuvat voivat olla solmuja. Yhteys `ACTED_IN` kertoo, että näyttelijä on näytellyt kyseisessä elokuvassa.
+
+```mermaid
+flowchart TB
+    A["Tom Hanks"]
+    B["Meg Ryan"]
+    C["Apollo 13"]
+    D["Sleepless in Seattle"]
+
+    A -->|ACTED_IN| C
+    A -->|ACTED_IN| D
+    B -->|ACTED_IN| D
+
+    classDef actor fill:#dcecff,stroke:#6494c5,color:#19364f
+    classDef movie fill:#e3f1e5,stroke:#70a17a,color:#204e2b
+
+    class A,B actor
+    class C,D movie
+```
+
+Tästä näemme, että Tom Hanks on näytellyt kahdessa elokuvassa. Lisäksi Tom Hanks ja Meg Ryan ovat näytelleet samassa elokuvassa.
+
+Tällainen malli sopii tilanteisiin, joissa halutaan tutkia kohteiden välisiä yhteyksiä. Voimme esimerkiksi etsiä tietyn näyttelijän elokuvia, hänen kanssaan työskennelleitä näyttelijöitä tai sosiaalisen verkoston käyttäjien välisiä yhteyksiä.
+
+### 5.4. Tulokset ja havainnot
+    Tämän perusteella voimme sanoa että riippuen tilanteesta SQL ja NOSQL voivat olla selkeästi pasempia kuin toinen.
+    Kun haluaa selkeästi järjesteltyä ja nopeasti saatavilla olevaa tiedostojen järjestelyä, kannattaa valita SQL.Wohoo!!!
+    Kun puolestaan haluaa jotai vapaamuotoista ja helposti laajenevaa, niin kannattaa valita NOSQL.
 
 ## 6. Yhteenveto ja lähteet
 
 ### 6.1. Yhteenveto
-
+Yhteenvedetty.
 
 
 ### 6.2. Lähteet
-
-
+    https://fi.wikipedia.org/wiki/Tietokanta
+    https://en.wikipedia.org/wiki/NoSQL
+    https://en.wikipedia.org/wiki/SQL
+    Trust me...
