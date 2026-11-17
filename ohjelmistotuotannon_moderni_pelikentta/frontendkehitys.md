@@ -12,6 +12,43 @@ Ohjelmistot koostuvat monista eri teknologioista, ja ohjelmisto voidaan yleensä
 
 Frontend on ohjelmiston käyttäjälle näkyvä ja käytettävä osa eli käyttöliittymä. Se on usein toteutettu verkkoteknologioilla, kuten HTML:llä, joka määrittelee sivun rakenteen, CSS:llä, jolla määritellään ulkoasu, sekä JavaScriptillä, joka tuo käyttöliittymään toiminnallisuuksia.
 
+### Esimerkki
+
+Esimerkiksi button voidaan luoda HTML + CSS + JavaScript näin:
+
+Html
+```
+<button id="myButton">Paina tästä</button>
+```
+
+CSS
+```
+#myButton {
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#myButton:hover {
+    background-color: darkblue;
+}
+```
+
+JS
+```
+const button = document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+    alert("Hei! Painoit painiketta!");
+});
+```
+
+
 Frontendiin kuuluu esimerkiksi ulkoasu, navigointi, painikkeet, lomakkeet, animaatiot ja erilaiset käyttöliittymäelementit.
 
 Frontend-kehityksessä käytetään erilaisia frameworkeja eli sovelluskehyksiä, kuten Angularia ja Reactia. Ne tarjoavat valmiita työkaluja, rakenteita ja toiminnallisuuksia, joiden avulla kehitystyötä voidaan nopeuttaa. Lisäksi voidaan hyödyntää erilaisia komponenttikirjastoja, joista löytyy valmiita käyttöliittymäelementtejä, kuten painikkeita ja lomakkeita. Ohjelmoija voi mukauttaa niiden ulkoasua ja toiminnallisuuksia omaan projektiinsa sopiviksi.
