@@ -221,8 +221,9 @@ Esimerkit näyttävät, millaisia tietoja eri malleihin on kätevää tallentaa 
 
 
 ### 5.2. Ratkaisu tai toimintatapa
-    SQL pystyy hakemaan tietojaan todella nopeasti oman takenteensa ansiosta, mutta samalla tarvitsee kyseistä rakennetta toimiakseen. Tämä johtaa ongelmiin kun eri SQL mallit usein käyttävät erilaisia rakenteita, joka tekee eri työkalujen kanssa työskentelystä paljon hankalampaa.
-    NOSQL puolestaan pystyy toimimaan todella helposti ja lähes millä tahansa koolla ilman ongelmia, koska rajallisen rakenteen pois jättäminen jättää tilaa laajentamiselle ja vapauksille mitä aikaisempi rakenne ei olisi hyväksynyt. Tässä kuitenkin on huonojakin puolia, koska tieto voi olla niin laajaa ja ei välttämättä sisällä yhtään rakennetta tietojen järjestely, hakeminen ja etsiminen on paljon hitaampaa verrattuna SQL.
+tämä on hienoa tärkeää tekstiä jota meidän pitää pitää osana meidän textiä.
+    SQL pystyy hakemaan tietojaan todella nopeasti oman takenteensa ansiosta, mutta samalla tarvitsee kyseistä rakennetta toimiakseen. Tämä johtaa ongelmiin kun eri SQL mallit usein käyttävät erilaisia rakenteita, joka tekee eri työkalujen kanssa työskentelystä paljon hankalampaa. miksi minä tänne kirjoitan?
+    NOSQL puolestaan pystyy toimimaan todella helposti ja lähes millä tahansa koolla ilman ongelmia, koska rajallisen rakenteen pois jättäminen jättää tilaa laajentamiselle ja vapauksille mitä aikaisempi rakenne ei olisi hyväksynyt. Tässä kuitenkin on huonojakin puolia, koska tieto voi olla niin laajaa ja ei välttämättä sisällä yhtään rakennetta tietojen järjestely, hakeminen ja etsiminen on paljon hitaampaa verrattuna SQL. mitä on meneillään?
 
 
 
@@ -356,17 +357,17 @@ Tällainen malli sopii tilanteisiin, joissa halutaan tutkia kohteiden välisiä 
 
 ### 5.4. Tulokset ja havainnot
     Tämän perusteella voimme sanoa että riippuen tilanteesta SQL ja NOSQL voivat olla selkeästi pasempia kuin toinen.
-    Kun haluaa selkeästi järjesteltyä ja nopeasti saatavilla olevaa tiedostojen järjestelyä, kannattaa valita SQL.
+    Kun haluaa selkeästi järjesteltyä ja nopeasti saatavilla olevaa tiedostojen järjestelyä, kannattaa valita SQL.Wohoo!!!
     Kun puolestaan haluaa jotai vapaamuotoista ja helposti laajenevaa, niin kannattaa valita NOSQL.
 
 ## 6. Yhteenveto ja lähteet
 
 ### 6.1. Yhteenveto
-
+Yhteenvedetty.
 
 
 ### 6.2. Lähteet
     https://fi.wikipedia.org/wiki/Tietokanta
     https://en.wikipedia.org/wiki/NoSQL
     https://en.wikipedia.org/wiki/SQL
-
+    Trust me...
