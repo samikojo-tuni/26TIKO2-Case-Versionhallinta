@@ -10,9 +10,6 @@ Unreal engine is a game engine developed by epic games.
 
 ### monetization
 
-<<<<<<< HEAD
-Unreal engine is written in C++ and that's why it is easily portable to different platforms like desktop, mobile, console and even VR. hehe
-=======
 Unreal engine is free for game developers, individuals and small businesses with revenue under $1 million USD and free for educators and schools with no revenue limit.
 
 ### features
@@ -28,4 +25,3 @@ Unreal engine is free for game developers, individuals and small businesses with
 - Content
 - Developer tools
 - Platform support
->>>>>>> 075d42fc89ffcf3d4c45dab45d76dac1f0ee349f
