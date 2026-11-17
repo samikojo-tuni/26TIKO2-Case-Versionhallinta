@@ -111,6 +111,8 @@ Monet NoSQL-tietokannat on suunniteltu horisontaalista skaalausta varten. Kun ku
 
 ### 4.2. Menetelmät ja käytännöt
 
+Yksi tietokanta ei yleensä sovi yhtä hyvin kaikkiin tiedon käyttötapoihin. Monissa suurissa järjestelmissä käytetään lähestymistapaa nimeltä *polyglot persistence*. Se tarkoittaa, että samassa järjestelmässä voidaan käyttää useita erilaisia tietojen tallennusmalleja.
+
 
 ### 4.3. Käyttökohteet
 
