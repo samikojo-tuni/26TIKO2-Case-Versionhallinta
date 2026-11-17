@@ -22,6 +22,8 @@ täällä kerrotaan vähän yhdestä ajosimulaattorista: <https://www.uv.es/uvwe
 
 ydinvoimalasimulaattorista: <https://wiki.helsinki.hacklab.fi/Reaktorisimulaattori>
 
+sairaalasimulaatio https://www.hus.fi/ammattilaiselle/ammattilaisten-palvelut-ja-ohjeet/hus-simulaatiokeskus
+
 täällä kans hyödyllistä infoo simulaatioista: <https://fi.wikipedia.org/wiki/Simulointi>
 
 sit kans infoo vanhast luotettavast wikipediast: <https://fi.wikipedia.org/wiki/Ajosimulaattori>
