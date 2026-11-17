@@ -12,9 +12,5 @@ money off of them.
 Roblox studio comes bundled with the Roblox engine.
 
 ### - Roblox engine
-<<<<<<< HEAD
-roblox is a game idiot
-=======
 
 Internally, engine is programmed in C++, while
->>>>>>> e5c8f194231c555b9802964f2b1997b831be3735
