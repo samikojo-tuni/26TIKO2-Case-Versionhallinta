@@ -147,10 +147,69 @@ SQL on hyvä valinta, kun tiedot liittyvät vahvasti toisiinsa. Relaatiotietokan
 
 ### 4.4. Hyödyt ja mahdollisuudet
 
+#### 4.4.1. Relaatiotietokantojen edut
+
+Relaatiotietokantojen etuja ovat esimerkiksi useita rivejä koskevien transaktioiden yhdenmukaisuus, monimutkaiset taulukoiden yhdistämiset, luotettavat säännöt tietojen välisten suhteiden eheydelle sekä kehittyneet työkalut raportointiin, ylläpitoon ja tietojen hallintaan.
+
+SQL-tietokannoilla on pitkä historia. Siksi niillä on suuret käyttäjäyhteisöt, ja internetistä löytyy paljon esimerkkejä toimivasta ja vakaasta ohjelmakoodista.
+
+#### 4.4.2. Eri NoSQL-mallien edut
+
+NoSQL-järjestelmästä riippuen mahdollisia etuja ovat:
+
+- Hajautettu tietojenkäsittely.
+- Hyvä skaalautuvuus.
+- Joustavat tietorakenteet ja monipuoliset kyselykielet.
+- Helppokäyttöisyys kehittäjille.
+- Verkkoyhteyden katkeamisen sietäminen.
+- Korkea saatavuus.
+- Joissakin järjestelmissä BASE-periaatteiden käyttö.
+
 
 ### 4.5. Haasteet, riskit ja rajoitukset
 
+#### 4.5.1. Tietomallien rajoitukset
 
+On tärkeää huomioida, että horisontaalinen skaalaus vaatii usein tietojen jakamista osiin (*sharding*). Relaatiotietokantojen normalisointi taas voi tehdä taulukoiden yhdistämisestä raskaampaa, jos samoja tietoja luetaan usein. Joskus tiedot olisi helpompi hakea denormalisoidusta rakenteesta, jossa niitä ei ole jaettu niin moneen taulukkoon.
+
+Ei-relationaaliset eli NoSQL-tietokannat on usein suunniteltu joustavia tietorakenteita, horisontaalista skaalausta sekä tiettyjä haku- ja käsittelytapoja varten. Joustavuuden ja skaalautuvuuden vuoksi niissä voidaan käyttää väljempiä sääntöjä kuin relaatiotietokannoissa. Tämä voi koskea esimerkiksi tietojen rakennetta tai transaktioiden laajuutta.
+
+**Dokumenttimalli (Document)**
+
+Dokumentit voivat kasvaa suuriksi. Joissakin järjestelmissä transaktioilla on rajoituksia. Lisäksi tietojen rakenne pitää suunnitella huolellisesti, jos kyselyitä tehdään paljon.
+
+**Sarakeperheet (Column-family)**
+
+Rivien avaimet ja sarakeperheet pitää suunnitella etukäteen. Toissijaisten indeksien tuki vaihtelee, ja kyselyiden tekeminen voi olla vähemmän joustavaa kuin relaatiomallissa.
+
+**Avain–arvo-malli (Key-value)**
+
+Kyselymahdollisuudet ovat rajalliset. Jos tietoa halutaan hakea arvon perusteella, tietomallia voidaan joutua muuttamaan. Suurten arvojen kirjoittaminen uudelleen voi myös olla raskasta.
+
+**Graafimalli (Graph)**
+
+Yksinkertaisten suhteiden käsittelyyn voi kulua turhaan resursseja. Malli vaatii huolellista suunnittelua, eikä suurten tietomäärien laaja analysointi ole aina helppoa.
+
+#### 4.5.2. Useiden teknologioiden yhdistämisen ongelmat
+
+Järjestelmää ei kannata jakaa liian aikaisin moniin eri tietokantoihin:
+
+- Käytä yhtä palvelua niin kauan kuin se täyttää suorituskyvyn, skaalautuvuuden ja hallinnan vaatimukset.
+- Pidä tietojen luokittelun yhteiset säännöt yhdessä paikassa. Vältä myös turhaa tietojen muuntamista ja saman työn tekemistä useissa tietokannoissa.
+
+Seuraavia yleisiä ongelmia kannattaa välttää:
+
+- Useat mikropalvelut käyttävät samaa yhteistä tietokantaa, jolloin ne tulevat liian riippuvaisiksi toisistaan.
+- Tiimi ottaa käyttöön uuden tallennusmallin, vaikka ylläpitokäytännöt, esimerkiksi valvonta ja varmuuskopiointi, eivät ole vielä riittävän hyviä.
+- Hakemistoa käytetään varsinaisena tietovarastona, vaikka sitä ei ole suunniteltu siihen.
+
+#### 4.5.3. Yleisiä väärinkäsityksiä NoSQL:stä
+
+**NoSQL-tietokannat sopivat huonosti toisiinsa liittyville tiedoille.**
+NoSQL-tietokannat pystyvät tallentamaan myös tietojen välisiä suhteita. Ne vain tekevät sen eri tavalla kuin relaatiotietokannat. Monien mielestä toisiinsa liittyvien tietojen mallintaminen voi olla NoSQL:ssä jopa helpompaa, koska tietoja ei aina tarvitse jakaa useaan taulukkoon. Sen sijaan liittyvät tiedot voidaan tallentaa samaan rakenteeseen.
+
+**NoSQL-tietokannat eivät tue ACID-transaktioita.**
+Todellisuudessa jotkin NoSQL-järjestelmät, esimerkiksi MongoDB, tukevat ACID-transaktioita.
 
 ## 5. Esimerkki
 
