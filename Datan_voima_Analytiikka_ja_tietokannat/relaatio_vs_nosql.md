@@ -77,19 +77,73 @@ Perussaatavuus tarkoittaa, että järjestelmä pystyy toimimaan myös osittaiste
 
 ### 3.2. Käsitteiden väliset yhteydet
 
+**Käsitteiden ja periaatteiden vertailu**
+
+Relaatiotietokantojen ja ei-relationaalisten tietokantojen välillä on monia eroja. Yksi tärkeimmistä eroista liittyy tietojen mallintamiseen. Seuraavassa taulukossa verrataan niiden keskeisiä ominaisuuksia.
+
+| Ominaisuus | SQL (RDBMS) | NoSQL |
+|---|---|---|
+| **Tietomalli (Data modeling)** | Tiedot tallennetaan taulukoihin, joissa on rivejä ja sarakkeita. Sopii hyvin rakenteiselle tiedolle. | Malli riippuu tietokannan tyypistä: avain–arvo, dokumentti, graafi tai laajasarakkeinen malli. Sopii puolirakenteiselle ja rakenteettomalle tiedolle. |
+| **Tietojen rakenne (Schema)** | Rakenne on ennalta määritelty: sarakkeiden tietotyypit on päätetty etukäteen. Rakenteen muuttaminen jälkikäteen voi olla vaikeampaa. | Rakenne on joustava. Dokumenteissa, riveissä tai avain–arvo-pareissa voi olla erilaisia tietoja, ja rakennetta on usein helpompi muuttaa. |
+| **Kyselykieli (Query language)** | Käytetään SQL-kyselykieltä. | Kyselykieli riippuu järjestelmästä. Esimerkiksi MongoDB käyttää MQL:ää ja Neo4j Cypheriä. |
+| **Skaalautuvuus (Scalability)** | Perinteisesti käytetään usein vertikaalista skaalausta, mutta monet järjestelmät tukevat myös horisontaalista skaalausta. | Monet NoSQL-järjestelmät on suunniteltu horisontaaliseen skaalaukseen. Tarkat mahdollisuudet riippuvat järjestelmän rakenteesta. |
+| **Tietojen väliset suhteet (Data relationships)** | Suhteet määritellään viiteavaimilla (*foreign keys*), ja tiedot voidaan yhdistää JOIN-kyselyillä. | Suhteet voivat olla sisäkkäisiä, suoraan määriteltyjä tai epäsuoria. |
+| **Transaktiot (Transaction type)** | Yleensä käytetään ACID-transaktioita. | Osa järjestelmistä tukee ACID-transaktioita, ja osassa käytetään BASE-malliin liittyviä yhdenmukaisuuden ratkaisuja. |
+| **Suorituskyky (Performance)** | Sopii monimutkaisiin kyselyihin ja transaktioita sisältäviin tehtäviin. | Voi toimia tehokkaasti tietyissä tiedonhakutavoissa ja hajautetuissa järjestelmissä. Nopeus riippuu järjestelmästä ja kyselyistä. |
+| **Tietojen yhdenmukaisuus (Data consistency)** | Tietojen yhdenmukaisuus on yleensä vahva. | Monissa järjestelmissä käytetään lopulta saavutettavaa yhdenmukaisuutta (*eventual consistency*). |
 
 
 ## 4. Aiheen kuvaus
 
 ### 4.1. Tarkoitus ja toimintaperiaatteet
 
+#### 4.1.1. Miten SQL toimii
 
+SQL-tietokantoja voidaan yleensä skaalata vertikaalisesti. Tämä tarkoittaa, että järjestelmän kapasiteettia kasvatetaan käyttämällä tehokkaampaa palvelinta, jossa on esimerkiksi enemmän suoritintehoa, keskusmuistia tai SSD-tallennustilaa. Vertikaalinen skaalaus on perinteisesti yleistä, mutta SQL-tietokantoja voidaan skaalata myös horisontaalisesti. Silloin tietoja jaetaan esimerkiksi useaan osaan (*sharding*).
+
+SQL-tietokannan rakenne perustuu relaatiomalliin. Tiedot järjestetään taulukoihin, joissa on sarakkeita eli attribuutteja ja rivejä eli tietueita. Koska tietokannan rakenne määritellään yleensä etukäteen, tiedot pitää suunnitella ja järjestää ennen tietokannan käyttöönottoa.
+
+#### 4.1.2. Miten NoSQL toimii
+
+NoSQL-järjestelmissä tietoja voidaan tallentaa erilaisiin rakenteisiin. Koska rakenne voi olla joustava ja muuttuva, kaikkea ei tarvitse suunnitella tarkasti etukäteen. Muutosten tekeminen on siksi usein helpompaa. NoSQL-tietokantoihin voidaan lisätä uusia kenttiä ja ominaisuuksia. Eri järjestelmillä on myös erilaisia kyselykieliä ja komentoja.
+
+Monet NoSQL-tietokannat on suunniteltu horisontaalista skaalausta varten. Kun kuormitus kasvaa, järjestelmään voidaan lisätä uusia palvelimia tai solmuja, jos tietokannan rakenne tukee sitä.
 
 ### 4.2. Menetelmät ja käytännöt
 
+Yksi tietokanta ei yleensä sovi yhtä hyvin kaikkiin tiedon käyttötapoihin. Monissa suurissa järjestelmissä käytetään lähestymistapaa nimeltä *polyglot persistence*. Se tarkoittaa, että samassa järjestelmässä voidaan käyttää useita erilaisia tietojen tallennusmalleja.
+
+#### 4.2.1. Miten tallennusmalli valitaan
+
+1. Selvitetään, miten tietoja käytetään: haetaanko yksittäisiä tietueita, lasketaanko yhteenvetoja, etsitäänkö sanoja tekstistä, samankaltaisia kohteita, tietyn aikavälin tietoja tai kokonaisia objekteja.
+2. Valitaan näihin käyttötapoihin sopivat tallennusmallit.
+3. Tehdään lyhyt lista palveluista, jotka tukevat valittuja malleja.
+4. Verrataan vaihtoehtoja tietojen yhdenmukaisuuden, viiveen, skaalautuvuuden, ylläpidon ja kustannusten perusteella.
+5. Yhdistetään eri malleja vain silloin, kun tietojen käyttötavat tai elinkaaret eroavat selvästi toisistaan.
+
+#### 4.2.2. Tietomallin valintaperusteet
+
+| Tarve | Sopiva tietomalli |
+|---|---|
+| Tiukat transaktiovaatimukset, jotka koskevat useita tietueita tai kohteita | Relaatiomalli |
+| Monimutkaiset objektit, joiden rakenne muuttuu, sekä JSON-pohjainen API | Dokumenttimalli |
+| Tiedon nopea haku avaimella tai välimuistin käyttö | Avain–arvo-malli |
+| Suuret, harvat telemetriatiedot, joita kirjoitetaan paljon | Sarakeperheet tai aikasarjat |
+| Monimutkaisten ja monitasoisten yhteyksien tutkiminen | Graafimalli |
 
 ### 4.3. Käyttökohteet
 
+#### 4.3.1. Milloin SQL kannattaa valita
+
+SQL on hyvä valinta, kun tiedot liittyvät vahvasti toisiinsa. Relaatiotietokannat ovat tehokkaita ja joustavia, ja niitä voidaan käyttää monenlaisissa sovelluksissa. Yksi niiden eduista on, että ne auttavat säilyttämään tietojen eheyden myös päivitysten aikana. Jos tietokannasta on useita kopioita eli replikoita, muutosten siirtymisnopeus niiden välillä riippuu järjestelmän asetuksista.
+
+#### 4.3.2. Milloin NoSQL kannattaa valita
+
+Suurten rakenteettomien tietomäärien tallentamiseen voivat sopia dokumenttitietokannat, kuten CouchDB, MongoDB ja Amazon DocumentDB. Jos tarvitaan nopea avain–arvo-tietokanta ilman tiukkoja eheyden takuita, Redis voi olla sopiva vaihtoehto. Jos suurista tietomääristä pitää tehdä monipuolisia hakuja, Elasticsearch voi olla hyvä ratkaisu.
+
+Myös esimerkiksi Facebookin kehittämä Cassandra pystyy käsittelemään erittäin suuria tietomääriä, jotka on jaettu monelle palvelimelle. Se voi poistaa yksittäisen vikaantumispisteen ja parantaa järjestelmän saatavuutta.
+
+NoSQL-järjestelmiä käytetään lähes kaikilla aloilla. Niitä käytetään esimerkiksi reaaliaikaisessa analytiikassa, sisällönhallinnassa, esineiden internetin (IoT) sovelluksissa, suosittelujärjestelmissä, petosten tunnistamisessa ja tuotekatalogien hallinnassa.
 
 
 ### 4.4. Hyödyt ja mahdollisuudet
