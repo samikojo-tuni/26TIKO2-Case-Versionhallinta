@@ -20,6 +20,7 @@ Kaikissa sovelluksissa ei ole backendia. Esimerkiksi pelkkä esittelysivu tai la
 - Opetus ja tuki:
     - Aloittelijoiden opettaminen
 
+### Kehittäjän työkalut
 - Backend-kehittäjien käyttämiä, suosittuja ohjelmointikieliä ovat mm:
     - Python, JavaScipt, Java, C#
 
