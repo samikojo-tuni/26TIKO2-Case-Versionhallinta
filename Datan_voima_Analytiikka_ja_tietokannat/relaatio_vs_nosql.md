@@ -77,6 +77,20 @@ Perussaatavuus tarkoittaa, että järjestelmä pystyy toimimaan myös osittaiste
 
 ### 3.2. Käsitteiden väliset yhteydet
 
+**Käsitteiden ja periaatteiden vertailu**
+
+Relaatiotietokantojen ja ei-relationaalisten tietokantojen välillä on monia eroja. Yksi tärkeimmistä eroista liittyy tietojen mallintamiseen. Seuraavassa taulukossa verrataan niiden keskeisiä ominaisuuksia.
+
+| Ominaisuus | SQL (RDBMS) | NoSQL |
+|---|---|---|
+| **Tietomalli (Data modeling)** | Tiedot tallennetaan taulukoihin, joissa on rivejä ja sarakkeita. Sopii hyvin rakenteiselle tiedolle. | Malli riippuu tietokannan tyypistä: avain–arvo, dokumentti, graafi tai laajasarakkeinen malli. Sopii puolirakenteiselle ja rakenteettomalle tiedolle. |
+| **Tietojen rakenne (Schema)** | Rakenne on ennalta määritelty: sarakkeiden tietotyypit on päätetty etukäteen. Rakenteen muuttaminen jälkikäteen voi olla vaikeampaa. | Rakenne on joustava. Dokumenteissa, riveissä tai avain–arvo-pareissa voi olla erilaisia tietoja, ja rakennetta on usein helpompi muuttaa. |
+| **Kyselykieli (Query language)** | Käytetään SQL-kyselykieltä. | Kyselykieli riippuu järjestelmästä. Esimerkiksi MongoDB käyttää MQL:ää ja Neo4j Cypheriä. |
+| **Skaalautuvuus (Scalability)** | Perinteisesti käytetään usein vertikaalista skaalausta, mutta monet järjestelmät tukevat myös horisontaalista skaalausta. | Monet NoSQL-järjestelmät on suunniteltu horisontaaliseen skaalaukseen. Tarkat mahdollisuudet riippuvat järjestelmän rakenteesta. |
+| **Tietojen väliset suhteet (Data relationships)** | Suhteet määritellään viiteavaimilla (*foreign keys*), ja tiedot voidaan yhdistää JOIN-kyselyillä. | Suhteet voivat olla sisäkkäisiä, suoraan määriteltyjä tai epäsuoria. |
+| **Transaktiot (Transaction type)** | Yleensä käytetään ACID-transaktioita. | Osa järjestelmistä tukee ACID-transaktioita, ja osassa käytetään BASE-malliin liittyviä yhdenmukaisuuden ratkaisuja. |
+| **Suorituskyky (Performance)** | Sopii monimutkaisiin kyselyihin ja transaktioita sisältäviin tehtäviin. | Voi toimia tehokkaasti tietyissä tiedonhakutavoissa ja hajautetuissa järjestelmissä. Nopeus riippuu järjestelmästä ja kyselyistä. |
+| **Tietojen yhdenmukaisuus (Data consistency)** | Tietojen yhdenmukaisuus on yleensä vahva. | Monissa järjestelmissä käytetään lopulta saavutettavaa yhdenmukaisuutta (*eventual consistency*). |
 
 
 ## 4. Aiheen kuvaus
