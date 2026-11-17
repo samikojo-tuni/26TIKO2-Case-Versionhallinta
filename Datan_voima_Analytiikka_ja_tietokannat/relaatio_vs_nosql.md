@@ -204,6 +204,14 @@ Seuraavia yleisiä ongelmia kannattaa välttää:
 - Tiimi ottaa käyttöön uuden tallennusmallin, vaikka ylläpitokäytännöt, esimerkiksi valvonta ja varmuuskopiointi, eivät ole vielä riittävän hyviä.
 - Hakemistoa käytetään varsinaisena tietovarastona, vaikka sitä ei ole suunniteltu siihen.
 
+#### 4.5.3. Yleisiä väärinkäsityksiä NoSQL:stä
+
+**NoSQL-tietokannat sopivat huonosti toisiinsa liittyville tiedoille.**
+NoSQL-tietokannat pystyvät tallentamaan myös tietojen välisiä suhteita. Ne vain tekevät sen eri tavalla kuin relaatiotietokannat. Monien mielestä toisiinsa liittyvien tietojen mallintaminen voi olla NoSQL:ssä jopa helpompaa, koska tietoja ei aina tarvitse jakaa useaan taulukkoon. Sen sijaan liittyvät tiedot voidaan tallentaa samaan rakenteeseen.
+
+**NoSQL-tietokannat eivät tue ACID-transaktioita.**
+Todellisuudessa jotkin NoSQL-järjestelmät, esimerkiksi MongoDB, tukevat ACID-transaktioita.
+
 ## 5. Esimerkki
 
 ### 5.1. Tilanteen kuvaus
