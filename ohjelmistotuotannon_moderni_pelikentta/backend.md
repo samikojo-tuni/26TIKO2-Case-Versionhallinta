@@ -22,14 +22,11 @@ Kaikissa sovelluksissa ei ole backendia. Esimerkiksi pelkkä esittelysivu tai la
 
 ### Kehittäjän työkalut
 - Backend-kehittäjien käyttämiä, suosittuja ohjelmointikieliä ovat mm:
-    - Python, JavaScipt, Java, C#
-
+  - Python, JavaScipt, Java, C#
 - Viitekehyksiä hyödynnetään tarjoamaan valmiita komponentteja ja rakenteita nopeuttamaan kehitystyötä. Käytetyimpiä ovat:
     - Django, Laravel, Node.js, Spring
-
 - Tietokantoja käytetään sovelluksen tietojen tallentamiseen ja hallitsemiseen. Käytettyjä tietokantoja ovat:
     - MongoDB, MySQL, Oracle, SQLite
-
 - Web-palvelimia käytetään monissa projekteissa. Näitä ovat:
     - Apache, NGINX, Lighttpd, Microsoft IIS
 
