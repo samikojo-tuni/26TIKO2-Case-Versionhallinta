@@ -1,4 +1,7 @@
-"jeejee"
-"hähää, sul on nyt konflikti
+<!-- AUTHOR: Jari Järvenpää -->
+# Kyberuhat
 
+
+<!-- AUTHOR: Henri Hurme -->
+# Tietoturvan merkitys koodarille
 
