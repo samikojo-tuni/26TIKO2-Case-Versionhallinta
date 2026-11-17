@@ -1,7 +1,5 @@
 ## 1. SQL VS NOSQL
 
-Texti:::??
-
 ## 2. Johdanto
 
 ### 2.1. Aiheen tausta
