@@ -22,7 +22,7 @@ Kaikissa sovelluksissa ei ole backendia. Esimerkiksi pelkkä esittelysivu tai la
 
 ### Kehittäjän työkalut
 - Backend-kehittäjien käyttämiä, suosittuja ohjelmointikieliä ovat mm:
-  - Python, JavaScipt, Java, C#
+    - Python, PHP, JavaScript, Ruby, Java, C#
 - Viitekehyksiä hyödynnetään tarjoamaan valmiita komponentteja ja rakenteita nopeuttamaan kehitystyötä. Käytetyimpiä ovat:
     - Django, Laravel, Node.js, Spring
 - Tietokantoja käytetään sovelluksen tietojen tallentamiseen ja hallitsemiseen. Käytettyjä tietokantoja ovat:
@@ -46,3 +46,34 @@ Saatetaan käyttää myös nimitystä backend-teknologia mutta teknisesti näill
     - Sääntöjen ja määrittelyjen joukko, joka mahdollistaa kahden eri ohjelmiston tai järjestelmän välisen viestinnän ja tiedonvaihdon.
 - Tietokannat
 - Pilvipalvelut
+
+## Tietokannat
+### Relaatiotietokanta (SQL)
+
+| ASIAKAS | TILAUS |
+| ------- | -------|
+| id = 1  | asiakas_id = 1 |
+| nimi = Matti | tuote = läppäri |
+
+
+- Tiedot tauluissa
+- Selkeät suhteet taulujen välillä
+- SQL-kyselyt
+- Kiinteä rakenne
+
+### Ei-relaatiotietokanta (NoSQL)
+```
+{
+  "id": 1,
+  "nimi": "Matti",
+  "tilaukset": [
+    {
+      "tuote": "Läppäri"
+    }
+  ]
+}
+```
+- Tiedot dokumentteina
+- Joustava rakenne
+- Ei pakollisia taulusuhteita
+- Soveltuu suurille tietomäärille
