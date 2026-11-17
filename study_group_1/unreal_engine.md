@@ -33,3 +33,16 @@ Unreal engine was developed by Epic Games. Originally it was made for a game in 
 ### C++ in Unreal engine
 
 Unreal engine is written in C++ and that's why it is easily portable to different platforms like desktop, mobile, console and even VR. Unreal uses a lot of C++ macros to make coding more easy and accessible to new game makers.
+In the future C++ will stay as a importat coding language in core engine systems but they have plans to start using "Verse" to make newer codes and games.
+
+### Verse
+
+Verse is a multi-paradigm programming language made by Epic games. Mostly used for "Fortnite" at the moment. Verse represents departure from typical programming language and makes way for new long-term programming.
+
+Verse aims to be:
+
+- Simple enough
+- Expressive enough
+- Safe enough
+- Fast enough
+- Stable enough
