@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 # Tekoälyn ja koneoppimisen nykytila
 
 ## Mitä tekoäly ja koneoppiminen ovat?
-=======
-# Tekoälyn nykytila
-
-# Mitä tekoäly on?
->>>>>>> 6c171d8d4a5c18b72a69c659504b93942406c1a6
 
 Tekoälyllä tarkoitetaan koneen kykyä käyttää perinteisesti ihmisen älyyn liitettyjä taitoja, kuten päättelyä, oppimista, suunnittelemista tai luomista.
 
@@ -23,9 +17,6 @@ Tekoälyä pidetään keskeisenä osaa yhteiskunnan digitaalista muutosta, ja si
 
 Tulevien sovellusten ennustetaan tuovan mukanaan valtavia muutoksia, mutta tekoäly on jo nyt keskeinen osa arkielämäämme.
 
-<<<<<<< HEAD
-##
-=======
 ### Tekoäly arkielämässä
 
 Emme aina välttämättä edes tiedosta käyttävämme tekoälyä. Tekoäly esiintyy elämässämme nykypäivänä lähes päivittäin. Esimerkkejä arkielämän tekoälysovelluksista on paljon.
@@ -35,4 +26,11 @@ Tekoälyä käytetään laajalti kohdennettujen suositusten tarjoamiseksi ihmisi
 Älypuhelimet käyttävät tekoälyä tehdäkseen tuotteestaan mahdollisimman yksilöllisen. Virtuaaliset avustajat vastaavat kysymyksiin, tarjoavat suosituksia ja auttavat arjen rutiinien ylläpitämisessä.
 
 Tutkijat selvittävät, kuinka tekoälyä voi käyttää analysoimaan suuria määriä terveystietoa ja löytämään yhteyksiä, jotka voisivat johtaa uusiin lääketieteellisiin keksintöihin ja diagnostiikan parantamiseen. Tutkijat ovat esimerkiksi kehittäneet tekoälyohjelman, joka kykenee tunnistamaan hätäpuhelun aikana sydänkohtauksen nopeammin ja useammin kuin puhelimeen vastannut ihminen.
->>>>>>> 6c171d8d4a5c18b72a69c659504b93942406c1a6
+
+#### Tekoälyn nykytila
+
+Tekoäly on siirtynyt yksittäisistä kokeiluista kiinteäksi osaksi työelämää, ohjelmistokehitystä ja yhteiskunnan rakenteita. Tekstiä, kuvaa ja koodia tuottavat kielimallit ovat jo vakiintuneita työkaluja monilla eri aloilla.
+
+Kehitys suuntautuu nyt yhä itsenäisempiin tekoälyagentteihin, jotka hoitavat monivaiheisia tehtäviä ihmisen puolesta. Samalla tekoäly kytkeytyy vahvemmin fyysiseen maailmaan robotiikassa ja teollisuudessa, mikä vaatii valtavia investointeja datakeskuksiin ja laskentatehoon.
+
+Teknologian yleistyessä myös sääntely, kuten EU:n tekoälysäädös, ohjaa käyttöä entistä tarkemmin. Organisaatioiden keskeisin tavoite onkin nyt valjastaa tekoäly turvallisesti ja aidosti tuottavaksi osaksi omia prosesseja.
