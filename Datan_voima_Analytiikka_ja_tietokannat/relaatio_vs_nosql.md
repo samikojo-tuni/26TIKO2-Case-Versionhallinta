@@ -111,9 +111,39 @@ Monet NoSQL-tietokannat on suunniteltu horisontaalista skaalausta varten. Kun ku
 
 ### 4.2. Menetelmät ja käytännöt
 
+Yksi tietokanta ei yleensä sovi yhtä hyvin kaikkiin tiedon käyttötapoihin. Monissa suurissa järjestelmissä käytetään lähestymistapaa nimeltä *polyglot persistence*. Se tarkoittaa, että samassa järjestelmässä voidaan käyttää useita erilaisia tietojen tallennusmalleja.
+
+#### 4.2.1. Miten tallennusmalli valitaan
+
+1. Selvitetään, miten tietoja käytetään: haetaanko yksittäisiä tietueita, lasketaanko yhteenvetoja, etsitäänkö sanoja tekstistä, samankaltaisia kohteita, tietyn aikavälin tietoja tai kokonaisia objekteja.
+2. Valitaan näihin käyttötapoihin sopivat tallennusmallit.
+3. Tehdään lyhyt lista palveluista, jotka tukevat valittuja malleja.
+4. Verrataan vaihtoehtoja tietojen yhdenmukaisuuden, viiveen, skaalautuvuuden, ylläpidon ja kustannusten perusteella.
+5. Yhdistetään eri malleja vain silloin, kun tietojen käyttötavat tai elinkaaret eroavat selvästi toisistaan.
+
+#### 4.2.2. Tietomallin valintaperusteet
+
+| Tarve | Sopiva tietomalli |
+|---|---|
+| Tiukat transaktiovaatimukset, jotka koskevat useita tietueita tai kohteita | Relaatiomalli |
+| Monimutkaiset objektit, joiden rakenne muuttuu, sekä JSON-pohjainen API | Dokumenttimalli |
+| Tiedon nopea haku avaimella tai välimuistin käyttö | Avain–arvo-malli |
+| Suuret, harvat telemetriatiedot, joita kirjoitetaan paljon | Sarakeperheet tai aikasarjat |
+| Monimutkaisten ja monitasoisten yhteyksien tutkiminen | Graafimalli |
 
 ### 4.3. Käyttökohteet
 
+#### 4.3.1. Milloin SQL kannattaa valita
+
+SQL on hyvä valinta, kun tiedot liittyvät vahvasti toisiinsa. Relaatiotietokannat ovat tehokkaita ja joustavia, ja niitä voidaan käyttää monenlaisissa sovelluksissa. Yksi niiden eduista on, että ne auttavat säilyttämään tietojen eheyden myös päivitysten aikana. Jos tietokannasta on useita kopioita eli replikoita, muutosten siirtymisnopeus niiden välillä riippuu järjestelmän asetuksista.
+
+#### 4.3.2. Milloin NoSQL kannattaa valita
+
+Suurten rakenteettomien tietomäärien tallentamiseen voivat sopia dokumenttitietokannat, kuten CouchDB, MongoDB ja Amazon DocumentDB. Jos tarvitaan nopea avain–arvo-tietokanta ilman tiukkoja eheyden takuita, Redis voi olla sopiva vaihtoehto. Jos suurista tietomääristä pitää tehdä monipuolisia hakuja, Elasticsearch voi olla hyvä ratkaisu.
+
+Myös esimerkiksi Facebookin kehittämä Cassandra pystyy käsittelemään erittäin suuria tietomääriä, jotka on jaettu monelle palvelimelle. Se voi poistaa yksittäisen vikaantumispisteen ja parantaa järjestelmän saatavuutta.
+
+NoSQL-järjestelmiä käytetään lähes kaikilla aloilla. Niitä käytetään esimerkiksi reaaliaikaisessa analytiikassa, sisällönhallinnassa, esineiden internetin (IoT) sovelluksissa, suosittelujärjestelmissä, petosten tunnistamisessa ja tuotekatalogien hallinnassa.
 
 
 ### 4.4. Hyödyt ja mahdollisuudet
