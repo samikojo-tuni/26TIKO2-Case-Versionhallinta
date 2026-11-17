@@ -15,3 +15,14 @@ Development machines usually are powerful hardware, compared to the user base's 
 The current situation can be compared to the times when computers had only little proceccins power and memory.
 It was mandatory to write power efficient code for it to even work.
 Developers feel that is not worth the effort to produce highly efficient code as more efficient hardware will ne available in the near future and will compensate for the inefficient code.
+
+## Data
+
+software consumes energy also at the data transmission phase. Whether this amount of data is too large or is transmitted too freguently can become costly both environmentally and in increased infrastructure costs.
+Websites have tripled in size in tne years and website sizes designed for mobile have grown tenfold.
+Grown website sizes are especially problematic on mobile platforms as mobile connections are a lot more energy inefficient than physical connections.
+The users of these grown websites have increased demands of what a website should look like on a new device. Adding the problem of oversized websites, online advertisising, that in many cases funds these websites, greatly decreases the energy efficiency of the internet and increases its carbon footprint.
+
+## Developer productivity / code efficiency
+
+Software developers holds developer efficiency more important, than code efficiency.
