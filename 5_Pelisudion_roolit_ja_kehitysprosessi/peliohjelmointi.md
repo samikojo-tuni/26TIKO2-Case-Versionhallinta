@@ -16,11 +16,11 @@ peleistä kirjoitetaan C++-ohjelmointikielellä, koska se tarjoaa
 maksimaalisen suorituskyvyn ja täyden laitteiston hallinnan.
 
 Indie-pelit, 2D- ja 3D-pelit, mobiilipelit sekä VR-pelit kirjoitetaan usein
-C#-ohjelmointikielellä. Se on C++-kieltä helpompi oppia, ja sen avulla voi
-julkaista pelejä lähes kaikille laitteille.
+C#-ohjelmointikielellä. Se on C++-kieltä helpompi oppia, ja sen
+avulla voi julkaista pelejä lähes kaikille laitteille.
 
-Yksinkertaisille peleille, kuten selainpeleille, kevyille mobiilipeleille ja
-HTML5-peleille, sopivat JavaScript tai TypeScript.
+Yksinkertaisille peleille, kuten selainpeleille, kevyille
+mobiilipeleille ja HTML5-peleille, sopivat JavaScript tai TypeScript.
 
 Pieniä 2D-pelejä kirjoitetaan Pythonilla. Se sopii erinomaisesti koodauksen
 opetteluun pelinkehityksen kautta, koska Python muistuttaa englannin kieltä
