@@ -97,6 +97,11 @@ Relaatiotietokantojen ja ei-relationaalisten tietokantojen välillä on monia er
 
 ### 4.1. Tarkoitus ja toimintaperiaatteet
 
+#### 4.1.1. Miten SQL toimii
+
+SQL-tietokantoja voidaan yleensä skaalata vertikaalisesti. Tämä tarkoittaa, että järjestelmän kapasiteettia kasvatetaan käyttämällä tehokkaampaa palvelinta, jossa on esimerkiksi enemmän suoritintehoa, keskusmuistia tai SSD-tallennustilaa. Vertikaalinen skaalaus on perinteisesti yleistä, mutta SQL-tietokantoja voidaan skaalata myös horisontaalisesti. Silloin tietoja jaetaan esimerkiksi useaan osaan (*sharding*).
+
+SQL-tietokannan rakenne perustuu relaatiomalliin. Tiedot järjestetään taulukoihin, joissa on sarakkeita eli attribuutteja ja rivejä eli tietueita. Koska tietokannan rakenne määritellään yleensä etukäteen, tiedot pitää suunnitella ja järjestää ennen tietokannan käyttöönottoa.
 
 
 ### 4.2. Menetelmät ja käytännöt
