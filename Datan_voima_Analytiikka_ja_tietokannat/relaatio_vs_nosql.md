@@ -24,6 +24,9 @@ Tietokannan valinta tai sopivan tietokannan suositteleminen on tärkeä tehtäv�
 
 ### 3.1. Peruskäsitteet
 
+#### 3.1.1. SQL
+
+SQL:ää käytetään edelleen paljon relaatiotietokantojen kyselyissä. Relaatiotietokannoissa tiedot tallennetaan taulukoiden riveille, ja taulukot voivat liittyä toisiinsa eri tavoin. Yksi tietue voi liittyä yhteen tai useaan muuhun tietueeseen. Myös yhden taulukon monet tietueet voivat liittyä toisen taulukon moniin tietueisiin. Relaatiotietokannat voivat tallentaa ja hakea tietoja nopeasti sekä käsitellä suuria tietomääriä ja monimutkaisia SQL-kyselyitä.
 
 
 ### 3.2. Käsitteiden väliset yhteydet
