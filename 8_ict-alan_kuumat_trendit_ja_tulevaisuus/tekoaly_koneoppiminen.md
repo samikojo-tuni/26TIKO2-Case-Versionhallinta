@@ -34,3 +34,35 @@ Tekoäly on siirtynyt yksittäisistä kokeiluista kiinteäksi osaksi työelämä
 Kehitys suuntautuu nyt yhä itsenäisempiin tekoälyagentteihin, jotka hoitavat monivaiheisia tehtäviä ihmisen puolesta. Samalla tekoäly kytkeytyy vahvemmin fyysiseen maailmaan robotiikassa ja teollisuudessa, mikä vaatii valtavia investointeja datakeskuksiin ja laskentatehoon.
 
 Teknologian yleistyessä myös sääntely, kuten EU:n tekoälysäädös, ohjaa käyttöä entistä tarkemmin. Organisaatioiden keskeisin tavoite onkin nyt valjastaa tekoäly turvallisesti ja aidosti tuottavaksi osaksi omia prosesseja.
+
+## Koneoppimisen nykytila
+
+Vaikka julkinen keskustelu keskittyy usein näyttäviin tekoälysovelluksiin, taustalla toimiva koneoppiminen on käynyt läpi oman merkittävän murroksen. Nykykehitystä ohjaavat erityisesti käytännönläheisyys, tehokkuus ja luotettavuus.
+
+### Ennätyksistä kohti tuotantokelpoisuutta
+Vielä muutama vuosi sitten koneoppimisessa tavoiteltiin lähes yksinomaan mahdollisimman korkeaa tarkkuutta testidatalla. Nykyään yritykset ja kehittäjät painottavat käytännön vaatimuksia: pientä viivettä, matalampia laskentakustannuksia ja energiatehokkuutta. Raskaiden yleismallien rinnalla suositaan yhä enemmän pienempiä, tiettyyn tehtävään erikoistuneita malleja.
+
+### Mallien uudelleenkäyttö ja synteettinen data
+Kaikkea ei enää tarvitse kouluttaa tyhjästä. Organisaatiot hyödyntävät laajasti valmiiksi esikoulutettuja malleja ja hienosäätävät niitä omaan käyttötarkoitukseensa. Lisäksi laadukkaan ja valmiiksi merkityn opetusdatan puutetta paikataan entistä enemmän synteettisellä eli keinotekoisesti tuotetulla datalla.
+
+---
+
+## Esimerkki
+
+**Käytännön esimerkki: Älykäs kunnossapito- ja tukijärjestelmä teollisuudessa**
+
+Nykyaikaisessa sovelluksessa perinteinen koneoppiminen ja moderni tekoäly toimivat yhdessä:
+
+1. **Koneoppiminen pinnan alla (Edge ML):** Tehtaan moottoriin liitetty anturi mittaa tärinää ja lämpötilaa. Laitteessa pyörivä kevyt koneoppimismalli tunnistaa poikkeamat normaalista ja ennustaa alkavan vian millisekunneissa.
+2. **Tekoäly rajapintana (LLM + RAG):** Kun järjestelmä antaa hälytyksen, huoltoteknikko voi kysyä tekoälyavustajalta vian syytä ja korjausohjeita. Avustaja hakee laitteen huoltokirjasta oikeat ohjeet ja kertoo selkeästi, mitä osia tarvitaan.
+
+---
+
+## Yhteenveto ja lähteet
+
+### Yhteenveto
+Tekoäly ja koneoppiminen kulkevat tiiviisti käsi kädessä: koneoppiminen tarjoaa tekniset menetelmät datasta oppimiseen, kun taas tekoälysovellukset tuovat tämän kyvykkyyden ihmisten ja organisaatioiden käyttöön. Nykykehitystä leimaavat yhtäältä generatiivisen tekoälyn ja agenttien nopea leviäminen, ja toisaalta koneoppimisen kypsyminen tehokkaaksi, valvotuksi ja säännellyksi osaksi jokapäiväistä infrastruktuuria.
+
+### Lähteet
+* Euroopan parlamentti: *Mitä tekoäly on ja mihin sitä käytetään?*
+* Helsingin yliopisto & MinnaLearn: *Elements of AI – Tekoälyn perusteet* (https://www.elementsofai.com/)
