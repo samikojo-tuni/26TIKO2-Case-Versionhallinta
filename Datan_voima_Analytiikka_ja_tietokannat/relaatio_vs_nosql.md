@@ -48,6 +48,32 @@ NoSQL-tietokannoista on kehittynyt neljä päätyyppiä: dokumenttitietokannat, 
 
 **Monimallinen tietokanta (Multi-model database)** tukee useampaa kuin yhtä NoSQL-tietomallia. Siksi kehittäjät voivat käyttää eri rakenteita sovelluksen tarpeiden mukaan. Samalla tietokannan hallintajärjestelmällä voidaan käsitellä useita tietomalleja yhdessä tietokannassa.
 
+#### 3.1.3. ACID, CAP, BASE
+
+##### 3.1.3.1. ACID
+
+SQL:ää käyttävissä relaatiotietokannan hallintajärjestelmissä (RDBMS) transaktioiden luotettavuutta kuvataan usein neljällä ACID-ominaisuudella. Se, mitä ominaisuuksia järjestelmä tukee ja millaisia takuita se antaa, riippuu tietokannasta ja sen asetuksista.
+
+- **Atomisuus (Atomicity):** transaktio joko suoritetaan kokonaan tai se epäonnistuu kokonaan. Se ei saa jäädä puoliksi valmiiksi edes järjestelmävirheen takia.
+- **Eheys (Consistency):** tietokannan pitää noudattaa tietojen oikeellisuutta koskevia sääntöjä ja estää tietojen rikkoutuminen.
+- **Eristävyys (Isolation):** samaan aikaan suoritettavat transaktiot erotetaan toisistaan valitun eristystason mukaisesti.
+- **Pysyvyys (Durability):** onnistuneen transaktion muutokset säilyvät, vaikka järjestelmään tulisi häiriö.
+
+##### 3.1.3.2. CAP
+
+ACID kuvaa transaktioiden luotettavuutta. CAP-teoreema puolestaan koskee hajautettuja järjestelmiä, ja sitä voidaan soveltaa sekä relaatio- että NoSQL-tietokantoihin. Myös jotkin NoSQL-järjestelmät, esimerkiksi MongoDB, tukevat ACID-transaktioita.
+
+CAP-teoreema kuvaa tasapainoa tietojen yhdenmukaisuuden, saatavuuden ja verkkoyhteyden katkeamisen sietämisen välillä. Jos hajautetun järjestelmän solmujen välinen yhteys katkeaa, järjestelmä ei voi samalla taata kaikille pyynnöille sekä tiukkaa yhdenmukaisuutta että saatavuutta.
+
+- **Yhdenmukaisuus (Consistency):** jokainen pyyntö saa joko uusimman tiedon tai virheilmoituksen. Tämä tarkoittaa eri asiaa kuin ACID-mallin consistency.
+- **Saatavuus (Availability):** jokainen pyyntö saa vastauksen, joka ei ole virheilmoitus.
+- **Verkon jakautumisen sieto (Partition tolerance):** järjestelmä jatkaa toimintaansa, vaikka sen solmujen välinen yhteys katkeaisi. Osa pyynnöistä voi silti jäädä käsittelemättä.
+
+##### 3.1.3.3. BASE
+
+Joissakin NoSQL-järjestelmissä käytetään BASE-mallia. Nimi tulee sanoista *Basically Available, Soft State, Eventual Consistency* (perussaatavuus, joustava tila ja lopulta saavutettava yhdenmukaisuus). BASE ei kuitenkaan kuulu kaikkiin NoSQL-tietokantoihin.
+
+Perussaatavuus tarkoittaa, että järjestelmä pystyy toimimaan myös osittaisten häiriöiden aikana, esimerkiksi yhden solmun vikaantuessa. Joustava tila tarkoittaa, että tiedoissa voi olla väliaikaisia eroja, kunnes tiedot muuttuvat ajan myötä jälleen yhdenmukaisiksi.
 
 ### 3.2. Käsitteiden väliset yhteydet
 
