@@ -103,6 +103,11 @@ SQL-tietokantoja voidaan yleensä skaalata vertikaalisesti. Tämä tarkoittaa, e
 
 SQL-tietokannan rakenne perustuu relaatiomalliin. Tiedot järjestetään taulukoihin, joissa on sarakkeita eli attribuutteja ja rivejä eli tietueita. Koska tietokannan rakenne määritellään yleensä etukäteen, tiedot pitää suunnitella ja järjestää ennen tietokannan käyttöönottoa.
 
+#### 4.1.2. Miten NoSQL toimii
+
+NoSQL-järjestelmissä tietoja voidaan tallentaa erilaisiin rakenteisiin. Koska rakenne voi olla joustava ja muuttuva, kaikkea ei tarvitse suunnitella tarkasti etukäteen. Muutosten tekeminen on siksi usein helpompaa. NoSQL-tietokantoihin voidaan lisätä uusia kenttiä ja ominaisuuksia. Eri järjestelmillä on myös erilaisia kyselykieliä ja komentoja.
+
+Monet NoSQL-tietokannat on suunniteltu horisontaalista skaalausta varten. Kun kuormitus kasvaa, järjestelmään voidaan lisätä uusia palvelimia tai solmuja, jos tietokannan rakenne tukee sitä.
 
 ### 4.2. Menetelmät ja käytännöt
 
