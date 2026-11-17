@@ -154,6 +154,18 @@ Relaatiotietokantojen etuja ovat esimerkiksi useita rivejä koskevien transaktio
 
 SQL-tietokannoilla on pitkä historia. Siksi niillä on suuret käyttäjäyhteisöt, ja internetistä löytyy paljon esimerkkejä toimivasta ja vakaasta ohjelmakoodista.
 
+#### 4.4.2. Eri NoSQL-mallien edut
+
+NoSQL-järjestelmästä riippuen mahdollisia etuja ovat:
+
+- Hajautettu tietojenkäsittely.
+- Hyvä skaalautuvuus.
+- Joustavat tietorakenteet ja monipuoliset kyselykielet.
+- Helppokäyttöisyys kehittäjille.
+- Verkkoyhteyden katkeamisen sietäminen.
+- Korkea saatavuus.
+- Joissakin järjestelmissä BASE-periaatteiden käyttö.
+
 
 ### 4.5. Haasteet, riskit ja rajoitukset
 
