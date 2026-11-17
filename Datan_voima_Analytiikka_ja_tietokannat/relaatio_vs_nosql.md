@@ -1,7 +1,5 @@
 ## 1. SQL VS NOSQL
 
-Artikkelin otsikko, joka kertoo selkeästi, mitä aihetta artikkelissa käsitellään.
-
 ## 2. Johdanto
 
 ### 2.1. Aiheen tausta
