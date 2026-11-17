@@ -1,4 +1,0 @@
-<!-- AUTHOR: Jari Järvenpää -->
-# Kyberuhat 
-
-
