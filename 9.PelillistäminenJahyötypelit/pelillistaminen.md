@@ -2,7 +2,9 @@
 
 ### Tehnyt Tuukka ja Eemil
 
+## 1. Miksi?
 
+<<<<<<< HEAD
 ## 1
 
 
@@ -14,3 +16,7 @@
 - Mcdonalds sovellus
 - Spotify
 
+=======
+Miksi pelillistää? Koska pelillistäminen pystyy luomaan
+käyttäjälle motivaatiota esim. kuntoiluun leaderboardissa nousulla.
+>>>>>>> refs/remotes/origin/main
