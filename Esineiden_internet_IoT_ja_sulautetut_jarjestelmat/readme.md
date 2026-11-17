@@ -11,10 +11,10 @@ Esineiden Internet (IoT) ja sulautetut järjestelmät
 ## Osa-alueet
 
 - Älykodit ja kuluttaja-IoT (alykodit.md)
-  - "Daniil Katorin"
+  - Daniil Katorin
 - Teollinen internet (IIoT) ja automaatio (teollinen_iot.md)
-  - "Daniil Katorin"
+  - Daniil Katorin
 - Laiteläheinen koodaus (C/C++, Arduino, Raspberry Pi) (sulautetut_koodaus.md)
   - Mikael Rantanen
 - IoT-laitteiden tietoturvahaasteet (iot_tietoturva.md)
-  - "tekijä"
+  - Mikael Rantanen
