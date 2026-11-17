@@ -1,4 +1,7 @@
 <!-- AUTHOR: Jari Järvenpää -->
-# Kyberuhat 
+# Kyberuhat
 
+
+<!-- AUTHOR: Henri Hurme -->
+# Tietoturvan merkitys koodarille
 
