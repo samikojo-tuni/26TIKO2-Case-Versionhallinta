@@ -44,3 +44,25 @@ Vielä muutama vuosi sitten koneoppimisessa tavoiteltiin lähes yksinomaan mahdo
 
 ### Mallien uudelleenkäyttö ja synteettinen data
 Kaikkea ei enää tarvitse kouluttaa tyhjästä. Organisaatiot hyödyntävät laajasti valmiiksi esikoulutettuja malleja ja hienosäätävät niitä omaan käyttötarkoitukseensa. Lisäksi laadukkaan ja valmiiksi merkityn opetusdatan puutetta paikataan entistä enemmän synteettisellä eli keinotekoisesti tuotetulla datalla.
+
+---
+
+## Esimerkki
+
+**Käytännön esimerkki: Älykäs kunnossapito- ja tukijärjestelmä teollisuudessa**
+
+Nykyaikaisessa sovelluksessa perinteinen koneoppiminen ja moderni tekoäly toimivat yhdessä:
+
+1. **Koneoppiminen pinnan alla (Edge ML):** Tehtaan moottoriin liitetty anturi mittaa tärinää ja lämpötilaa. Laitteessa pyörivä kevyt koneoppimismalli tunnistaa poikkeamat normaalista ja ennustaa alkavan vian millisekunneissa.
+2. **Tekoäly rajapintana (LLM + RAG):** Kun järjestelmä antaa hälytyksen, huoltoteknikko voi kysyä tekoälyavustajalta vian syytä ja korjausohjeita. Avustaja hakee laitteen huoltokirjasta oikeat ohjeet ja kertoo selkeästi, mitä osia tarvitaan.
+
+---
+
+## Yhteenveto ja lähteet
+
+### Yhteenveto
+Tekoäly ja koneoppiminen kulkevat tiiviisti käsi kädessä: koneoppiminen tarjoaa tekniset menetelmät datasta oppimiseen, kun taas tekoälysovellukset tuovat tämän kyvykkyyden ihmisten ja organisaatioiden käyttöön. Nykykehitystä leimaavat yhtäältä generatiivisen tekoälyn ja agenttien nopea leviäminen, ja toisaalta koneoppimisen kypsyminen tehokkaaksi, valvotuksi ja säännellyksi osaksi jokapäiväistä infrastruktuuria.
+
+### Lähteet
+* Euroopan parlamentti: *Mitä tekoäly on ja mihin sitä käytetään?*
+* Helsingin yliopisto & MinnaLearn: *Elements of AI – Tekoälyn perusteet* (https://www.elementsofai.com/)

@@ -1,6 +1,4 @@
-## 1. Pääotsikko
-
-Artikkelin otsikko, joka kertoo selkeästi, mitä aihetta artikkelissa käsitellään.
+## 1. SQL VS NOSQL
 
 ## 2. Johdanto
 
@@ -145,6 +143,7 @@ Myös esimerkiksi Facebookin kehittämä Cassandra pystyy käsittelemään eritt
 
 NoSQL-järjestelmiä käytetään lähes kaikilla aloilla. Niitä käytetään esimerkiksi reaaliaikaisessa analytiikassa, sisällönhallinnassa, esineiden internetin (IoT) sovelluksissa, suosittelujärjestelmissä, petosten tunnistamisessa ja tuotekatalogien hallinnassa.
 
+SQL on hyvä valinta, kun tiedot liittyvät vahvasti toisiinsa. Relaatiotietokannat ovat tehokkaita ja joustavia, ja niitä voidaan käyttää monenlaisissa sovelluksissa. Yksi niiden eduista on, että ne auttavat säilyttämään tietojen eheyden myös päivitysten aikana. Jos tietokannasta on useita kopioita eli replikoita, muutosten siirtymisnopeus niiden välillä riippuu järjestelmän asetuksista.
 
 ### 4.4. Hyödyt ja mahdollisuudet
 
@@ -216,14 +215,14 @@ Todellisuudessa jotkin NoSQL-järjestelmät, esimerkiksi MongoDB, tukevat ACID-t
 
 ### 5.1. Tilanteen kuvaus
 
-
-
 ### 5.2. Ratkaisu tai toimintatapa
-
+    SQL pystyy hakemaan tietojaan todella nopeasti oman takenteensa ansiosta, mutta samalla tarvitsee kyseistä rakennetta toimiakseen. Tämä johtaa ongelmiin kun eri SQL mallit usein käyttävät erilaisia rakenteita, joka tekee eri työkalujen kanssa työskentelystä paljon hankalampaa.
+    NOSQL puolestaan pystyy toimimaan todella helposti ja lähes millä tahansa koolla ilman ongelmia, koska rajallisen rakenteen pois jättäminen jättää tilaa laajentamiselle ja vapauksille mitä aikaisempi rakenne ei olisi hyväksynyt. Tässä kuitenkin on huonojakin puolia, koska tieto voi olla niin laajaa ja ei välttämättä sisällä yhtään rakennetta tietojen järjestely, hakeminen ja etsiminen on paljon hitaampaa verrattuna SQL.
 
 ### 5.3. Tulokset ja havainnot
-
-
+    Tämän perusteella voimme sanoa että riippuen tilanteesta SQL ja NOSQL voivat olla selkeästi pasempia kuin toinen.
+    Kun haluaa selkeästi järjesteltyä ja nopeasti saatavilla olevaa tiedostojen järjestelyä, kannattaa valita SQL.
+    Kun puolestaan haluaa jotai vapaamuotoista ja helposti laajenevaa, niin kannattaa valita NOSQL.
 
 ## 6. Yhteenveto ja lähteet
 
@@ -232,5 +231,7 @@ Todellisuudessa jotkin NoSQL-järjestelmät, esimerkiksi MongoDB, tukevat ACID-t
 
 
 ### 6.2. Lähteet
-
+    https://fi.wikipedia.org/wiki/Tietokanta
+    https://en.wikipedia.org/wiki/NoSQL
+    https://en.wikipedia.org/wiki/SQL
 
