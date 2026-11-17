@@ -215,11 +215,146 @@ Todellisuudessa jotkin NoSQL-järjestelmät, esimerkiksi MongoDB, tukevat ACID-t
 
 ### 5.1. Tilanteen kuvaus
 
+Erilaiset tietokannat järjestävät ja tallentavat tietoa eri tavoilla. Jotta erot olisi helpompi ymmärtää, tarkastellaan viittä yksinkertaista esimerkkiä: yhtä SQL-relaatiotietokantaa ja neljää NoSQL-tietokantojen päätyyppiä.
+
+Esimerkit näyttävät, millaisia tietoja eri malleihin on kätevää tallentaa ja miltä tietojen rakenne voi näyttää.
+
+
 ### 5.2. Ratkaisu tai toimintatapa
     SQL pystyy hakemaan tietojaan todella nopeasti oman takenteensa ansiosta, mutta samalla tarvitsee kyseistä rakennetta toimiakseen. Tämä johtaa ongelmiin kun eri SQL mallit usein käyttävät erilaisia rakenteita, joka tekee eri työkalujen kanssa työskentelystä paljon hankalampaa.
     NOSQL puolestaan pystyy toimimaan todella helposti ja lähes millä tahansa koolla ilman ongelmia, koska rajallisen rakenteen pois jättäminen jättää tilaa laajentamiselle ja vapauksille mitä aikaisempi rakenne ei olisi hyväksynyt. Tässä kuitenkin on huonojakin puolia, koska tieto voi olla niin laajaa ja ei välttämättä sisällä yhtään rakennetta tietojen järjestely, hakeminen ja etsiminen on paljon hitaampaa verrattuna SQL.
 
-### 5.3. Tulokset ja havainnot
+
+
+#### 5.2.1. Relaatiotietokanta (Relational Database, SQL)
+
+**Esimerkki: käyttäjät ja heidän harrastuksensa**
+
+Tarkastellaan tilannetta, jossa haluamme tallentaa käyttäjän tiedot ja harrastukset. Tallennettavia tietoja ovat etunimi, sukunimi, puhelinnumero, kaupunki ja harrastusten lista.
+
+Relaatiotietokannan hallintajärjestelmässä (RDBMS) tekisimme todennäköisesti kaksi taulukkoa: yhden käyttäjille (Users) ja toisen harrastuksille (Hobbies). Jos haluamme saada kaikki käyttäjän tiedot ja harrastukset, meidän pitää yhdistää näiden kahden taulukon tiedot.
+
+**Käyttäjien taulukko (User table)**
+
+| ID | first_name | last_name | cell | city |
+|---|---|---|---|---|
+| 1 | Leslie | Yepp | 8125552344 | Pawnee |
+
+**Harrastusten taulukko (Hobbies table)**
+
+| ID | user_id | hobby |
+|---|---|---|
+| 10 | 1 | scrapbooking |
+| 11 | 1 | eating waffles |
+| 12 | 1 | working |
+
+Kenttä `user_id` yhdistää harrastukset ensimmäisen taulukon käyttäjään.
+
+Jotta saamme käyttäjän tiedot ja harrastukset yhdessä, meidän pitää yhdistää taulukot `JOIN`-toiminnolla.
+
+#### 5.2.2. Dokumenttitietokanta (Document Database)
+
+**Esimerkki: käyttäjäprofiili**
+
+NoSQL-tietokannan tietomalli riippuu siitä, minkä tyyppisen tietokannan valitsemme. Katsotaan, miten samat käyttäjän tiedot ja harrastukset voidaan tallentaa dokumenttitietokantaan, esimerkiksi MongoDB:hen.
+
+```json
+{
+  "_id": 1,
+  "first_name": "Leslie",
+  "last_name": "Yepp",
+  "cell": "8125552344",
+  "city": "Pawnee",
+  "hobbies": [
+    "scrapbooking",
+    "eating waffles",
+    "working"
+  ]
+}
+```
+
+Kaikki käyttäjän tiedot ja harrastukset voidaan hakea yhdestä dokumentista. Taulukoita ei tarvitse yhdistää. Tässä esimerkissä toisiinsa liittyvien tietojen hakeminen voi olla helpompaa ja nopeampaa, mutta todellinen suorituskyky riippuu tietojen rakenteesta ja kyselyiden tyypistä.
+
+#### 5.2.3. Avain–arvo-tietokanta (Key-Value Database)
+
+**Esimerkki: polkupyörän nimen tallentaminen**
+
+Avain–arvo-tietokannassa jokaisella yksilöllisellä avaimella on siihen liittyvä arvo.
+
+| Avain (Key) | Arvo (Value) |
+|---|---|
+| `bike:1` | `Deimos` |
+
+Redisissä tiedon voi tallentaa ja hakea yksinkertaisilla komennoilla:
+
+```text
+SET bike:1 Deimos
+GET bike:1
+```
+
+Tulos:
+
+```text
+"Deimos"
+```
+
+Arvon hakemista varten täytyy tietää sen avain. Tämä malli sopii nopeaan tiedonhakuun, esimerkiksi välimuistiin tai käyttäjäistuntojen tallentamiseen.
+
+#### 5.2.4. Laajasarakkeinen tietokanta (Wide-Column Database)
+
+**Esimerkki: ystävät ja sosiaaliset ryhmät**
+
+Laajasarakkeinen tietokanta tallentaa tiedot riveihin ja sarakkeisiin, mutta eri riveillä voi olla eri sarakkeita.
+
+Voimme esimerkiksi tallentaa tiedon siitä, miten eri ihmiset tuntevat ystävänsä.
+
+| Käyttäjä | Fred | Gabriel | Hiroshi | Seo Yoon | Jakob |
+|---|---|---|---|---|---|
+| Jose | book-club | work | tennis | | |
+| Sofia | | | work | school | chess-club |
+
+Tässä taulukossa:
+
+- Jose tuntee Fredin kirjakerhosta (*book-club*).
+- Jose tuntee Gabrielin työn kautta (*work*).
+- Sofia tuntee Seo Yoonin koulusta (*school*).
+- Sofia tuntee Jakobin shakkikerhosta (*chess-club*).
+
+Tavallisesta relaatiotaulukosta poiketen laajasarakkeinen malli sallii sen, että eri riveillä on eri sarakkeita.
+
+Malli sopii suuriin ja harvoihin tietoaineistoihin, joissa eri kohteilla voi olla paljon erilaisia ominaisuuksia ja monia tyhjiä kenttiä.
+
+#### 5.2.5. Graafitietokanta (Graph Database)
+
+**Esimerkki: näyttelijät ja elokuvat**
+
+Graafitietokanta tallentaa tiedot solmuina (*nodes*) ja niiden välisinä yhteyksinä (*relationships*).
+
+Esimerkiksi näyttelijät ja elokuvat voivat olla solmuja. Yhteys `ACTED_IN` kertoo, että näyttelijä on näytellyt kyseisessä elokuvassa.
+
+```mermaid
+flowchart TB
+    A["Tom Hanks"]
+    B["Meg Ryan"]
+    C["Apollo 13"]
+    D["Sleepless in Seattle"]
+
+    A -->|ACTED_IN| C
+    A -->|ACTED_IN| D
+    B -->|ACTED_IN| D
+
+    classDef actor fill:#dcecff,stroke:#6494c5,color:#19364f
+    classDef movie fill:#e3f1e5,stroke:#70a17a,color:#204e2b
+
+    class A,B actor
+    class C,D movie
+```
+
+Tästä näemme, että Tom Hanks on näytellyt kahdessa elokuvassa. Lisäksi Tom Hanks ja Meg Ryan ovat näytelleet samassa elokuvassa.
+
+Tällainen malli sopii tilanteisiin, joissa halutaan tutkia kohteiden välisiä yhteyksiä. Voimme esimerkiksi etsiä tietyn näyttelijän elokuvia, hänen kanssaan työskennelleitä näyttelijöitä tai sosiaalisen verkoston käyttäjien välisiä yhteyksiä.
+
+### 5.4. Tulokset ja havainnot
     Tämän perusteella voimme sanoa että riippuen tilanteesta SQL ja NOSQL voivat olla selkeästi pasempia kuin toinen.
     Kun haluaa selkeästi järjesteltyä ja nopeasti saatavilla olevaa tiedostojen järjestelyä, kannattaa valita SQL.
     Kun puolestaan haluaa jotai vapaamuotoista ja helposti laajenevaa, niin kannattaa valita NOSQL.
