@@ -10,6 +10,10 @@ WebGL (Web Graphics Library) is an application programming interface (API) used 
 
 WebGPU is a graphics API that acts as an interface between JavaScript and GPUs. WebGPU is a newer, modernized version of WebGL with broader capabilities and is intended to eventually replace WebGL. WebGPU uses its own shading language WGSL (WebGPU Shading Language) and includes compute shaders. This enables heavy workloads that WebGL can't handle.
 
+## Comparison And Advantages
+
+When to use WebGL, WebGPU.
+
 ### Sources
 
 WebGPU Working Group. Retrieved 17.11.2026, from [Webgpu.org](https://webgpu.org/)  

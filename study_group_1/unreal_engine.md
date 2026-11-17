@@ -46,3 +46,14 @@ Verse aims to be:
 - Safe enough
 - Fast enough
 - Stable enough
+
+---
+
+### Sources
+
+<https://www.unrealengine.com/features>
+<https://www.unrealengine.com/uses/games>
+<https://www.unrealengine.com/license>
+<https://en.wikipedia.org/wiki/Unreal_Engine>
+<https://dev.epicgames.com/documentation/unreal-engine/unreal-engine-5-9-documentation>
+<https://verselang.github.io/book/00_overview/>
