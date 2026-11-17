@@ -191,6 +191,19 @@ Kyselymahdollisuudet ovat rajalliset. Jos tietoa halutaan hakea arvon perusteell
 
 Yksinkertaisten suhteiden käsittelyyn voi kulua turhaan resursseja. Malli vaatii huolellista suunnittelua, eikä suurten tietomäärien laaja analysointi ole aina helppoa.
 
+#### 4.5.2. Useiden teknologioiden yhdistämisen ongelmat
+
+Järjestelmää ei kannata jakaa liian aikaisin moniin eri tietokantoihin:
+
+- Käytä yhtä palvelua niin kauan kuin se täyttää suorituskyvyn, skaalautuvuuden ja hallinnan vaatimukset.
+- Pidä tietojen luokittelun yhteiset säännöt yhdessä paikassa. Vältä myös turhaa tietojen muuntamista ja saman työn tekemistä useissa tietokannoissa.
+
+Seuraavia yleisiä ongelmia kannattaa välttää:
+
+- Useat mikropalvelut käyttävät samaa yhteistä tietokantaa, jolloin ne tulevat liian riippuvaisiksi toisistaan.
+- Tiimi ottaa käyttöön uuden tallennusmallin, vaikka ylläpitokäytännöt, esimerkiksi valvonta ja varmuuskopiointi, eivät ole vielä riittävän hyviä.
+- Hakemistoa käytetään varsinaisena tietovarastona, vaikka sitä ei ole suunniteltu siihen.
+
 ## 5. Esimerkki
 
 ### 5.1. Tilanteen kuvaus
