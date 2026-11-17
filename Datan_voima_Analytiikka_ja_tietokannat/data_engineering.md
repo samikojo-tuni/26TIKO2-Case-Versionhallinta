@@ -14,15 +14,31 @@ Big Data ja dataputket
 - Miten Big Data ja dataputket ovat kehittyneet tietotekniikan mukana?
 - Miksi aihe on tärkeä nykyaikaisessa ohjelmistokehityksessä?
  
-### 2.2 Aiheen merkitys
- 
-- Miksi Big Data on tärkeä ICT-alalla?
-- Mikä merkitys dataputkilla on datan keräämisessä ja käsittelyssä?
-- Miksi ohjelmistokehittäjien kannattaa ymmärtää datan kulkua järjestelmissä?
-- Miten yritykset hyödyntävät suuria tietomääriä päätöksenteossa?
-- Miten datan käsittely vaikuttaa liiketoimintaan?
-- Mitä ongelmia voi syntyä ilman tehokkaita dataputkia?
- 
+## 2.2 Aiheen merkitys
+
+Big Data on tärkeä osa nykyaikaista ICT-alaa, koska digitaalisten palvelujen käyttö 
+tuottaa jatkuvasti suuria määriä dataa. Yritykset keräävät tietoa esimerkiksi 
+verkkosivustoilta, mobiilisovelluksista, antureista ja sosiaalisesta mediasta. 
+Tämän datan avulla voidaan analysoida käyttäjien toimintaa, tunnistaa trendejä
+ja tehdä päätöksiä aiempaa tarkemmin.
+
+Big Datan hyödyntäminen auttaa yrityksiä kehittämään palveluitaan, tehostamaan 
+toimintaansa ja vastaamaan asiakkaiden tarpeisiin paremmin. Datan perusteella 
+voidaan myös ennustaa tulevia muutoksia ja tunnistaa uusia 
+liiketoimintamahdollisuuksia.
+
+Dataputkilla on keskeinen rooli datan keräämisessä, siirtämisessä, käsittelyssä 
+ja tallentamisessa. Ne mahdollistavat tiedon kulkemisen eri järjestelmien välillä
+sekä varmistavat, että data on saatavilla analysointia ja päätöksentekoa varten. 
+Ohjelmistokehittäjien on tärkeää ymmärtää datan kulkua järjestelmissä, jotta 
+sovellukset toimivat tehokkaasti ja luotettavasti.
+
+Ilman hyvin suunniteltuja dataputkia data voi olla hajallaan eri järjestelmissä, 
+tiedot voivat vanhentua tai analytiikka voi perustua puutteelliseen informaatioon. 
+Tämä voi heikentää päätöksenteon laatua ja aiheuttaa ongelmia liiketoiminnalle. 
+Tehokkaat dataputket tukevat yritysten toimintaa mahdollistamalla ajantasaisen 
+tiedon hyödyntämisen ja prosessien automatisoinnin.
+
 ## 3. Keskeiset käsitteet
  
 ### 3.1 Peruskäsitteet
