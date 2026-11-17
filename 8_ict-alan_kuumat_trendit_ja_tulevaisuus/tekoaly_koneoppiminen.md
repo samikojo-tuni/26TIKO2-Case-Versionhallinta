@@ -34,3 +34,13 @@ Tekoäly on siirtynyt yksittäisistä kokeiluista kiinteäksi osaksi työelämä
 Kehitys suuntautuu nyt yhä itsenäisempiin tekoälyagentteihin, jotka hoitavat monivaiheisia tehtäviä ihmisen puolesta. Samalla tekoäly kytkeytyy vahvemmin fyysiseen maailmaan robotiikassa ja teollisuudessa, mikä vaatii valtavia investointeja datakeskuksiin ja laskentatehoon.
 
 Teknologian yleistyessä myös sääntely, kuten EU:n tekoälysäädös, ohjaa käyttöä entistä tarkemmin. Organisaatioiden keskeisin tavoite onkin nyt valjastaa tekoäly turvallisesti ja aidosti tuottavaksi osaksi omia prosesseja.
+
+## Koneoppimisen nykytila
+
+Vaikka julkinen keskustelu keskittyy usein näyttäviin tekoälysovelluksiin, taustalla toimiva koneoppiminen on käynyt läpi oman merkittävän murroksen. Nykykehitystä ohjaavat erityisesti käytännönläheisyys, tehokkuus ja luotettavuus.
+
+### Ennätyksistä kohti tuotantokelpoisuutta
+Vielä muutama vuosi sitten koneoppimisessa tavoiteltiin lähes yksinomaan mahdollisimman korkeaa tarkkuutta testidatalla. Nykyään yritykset ja kehittäjät painottavat käytännön vaatimuksia: pientä viivettä, matalampia laskentakustannuksia ja energiatehokkuutta. Raskaiden yleismallien rinnalla suositaan yhä enemmän pienempiä, tiettyyn tehtävään erikoistuneita malleja.
+
+### Mallien uudelleenkäyttö ja synteettinen data
+Kaikkea ei enää tarvitse kouluttaa tyhjästä. Organisaatiot hyödyntävät laajasti valmiiksi esikoulutettuja malleja ja hienosäätävät niitä omaan käyttötarkoitukseensa. Lisäksi laadukkaan ja valmiiksi merkityn opetusdatan puutetta paikataan entistä enemmän synteettisellä eli keinotekoisesti tuotetulla datalla.
