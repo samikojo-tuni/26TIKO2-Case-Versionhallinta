@@ -169,7 +169,27 @@ NoSQL-järjestelmästä riippuen mahdollisia etuja ovat:
 
 ### 4.5. Haasteet, riskit ja rajoitukset
 
+#### 4.5.1. Tietomallien rajoitukset
 
+On tärkeää huomioida, että horisontaalinen skaalaus vaatii usein tietojen jakamista osiin (*sharding*). Relaatiotietokantojen normalisointi taas voi tehdä taulukoiden yhdistämisestä raskaampaa, jos samoja tietoja luetaan usein. Joskus tiedot olisi helpompi hakea denormalisoidusta rakenteesta, jossa niitä ei ole jaettu niin moneen taulukkoon.
+
+Ei-relationaaliset eli NoSQL-tietokannat on usein suunniteltu joustavia tietorakenteita, horisontaalista skaalausta sekä tiettyjä haku- ja käsittelytapoja varten. Joustavuuden ja skaalautuvuuden vuoksi niissä voidaan käyttää väljempiä sääntöjä kuin relaatiotietokannoissa. Tämä voi koskea esimerkiksi tietojen rakennetta tai transaktioiden laajuutta.
+
+**Dokumenttimalli (Document)**
+
+Dokumentit voivat kasvaa suuriksi. Joissakin järjestelmissä transaktioilla on rajoituksia. Lisäksi tietojen rakenne pitää suunnitella huolellisesti, jos kyselyitä tehdään paljon.
+
+**Sarakeperheet (Column-family)**
+
+Rivien avaimet ja sarakeperheet pitää suunnitella etukäteen. Toissijaisten indeksien tuki vaihtelee, ja kyselyiden tekeminen voi olla vähemmän joustavaa kuin relaatiomallissa.
+
+**Avain–arvo-malli (Key-value)**
+
+Kyselymahdollisuudet ovat rajalliset. Jos tietoa halutaan hakea arvon perusteella, tietomallia voidaan joutua muuttamaan. Suurten arvojen kirjoittaminen uudelleen voi myös olla raskasta.
+
+**Graafimalli (Graph)**
+
+Yksinkertaisten suhteiden käsittelyyn voi kulua turhaan resursseja. Malli vaatii huolellista suunnittelua, eikä suurten tietomäärien laaja analysointi ole aina helppoa.
 
 ## 5. Esimerkki
 
