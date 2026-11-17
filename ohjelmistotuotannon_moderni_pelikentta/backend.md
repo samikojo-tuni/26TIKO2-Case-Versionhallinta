@@ -19,6 +19,18 @@ Kaikissa sovelluksissa ei ole backendia. Esimerkiksi pelkkä esittelysivu tai la
     - Vikatilanteiden ratkominen ja niistä kommukoiminen mm. projektijohtajalle
 - Opetus ja tuki:
     - Aloittelijoiden opettaminen
+---
+Backend-kehittäjien käyttämiä, suosittuja ohjelmointikieliä ovat mm:
+- Python, JavaScipt, Java, C#
+
+Viitekehyksiä hyödynnetään tarjoamaan valmiita komponentteja ja rakenteita nopeuttamaan kehitystyötä. Käytetyimpiä ovat:
+- Django, Laravel, Node.js, Spring
+
+Tietokantoja käytetään sovelluksen tietojen tallentamiseen ja hallitsemiseen. Käytettyjä tietokantoja ovat:
+- MongoDB, MySQL, Oracle, SQLite
+
+Web-palvelimia käytetään monissa projekteissa. Näitä ovat:
+- Apache, NGINX, Lighttpd, Microsoft IIS
 
 ## Palvelinteknologiat
 Tarkoittavat ohjelmistoja, laitteistoja ja arkkitehtuureja, joiden avulla verkkosivustot, sovellukset ja pilvipalvelut toimivat ja palvelevat käyttäjiä. Tyypillisesti jaetaan palvelinlaitteistoihin, käyttöjärjestelmiin, verkkopalvelinohjelmistoihin, tietokantoihin ja ohjelmointiympäristöihin.
