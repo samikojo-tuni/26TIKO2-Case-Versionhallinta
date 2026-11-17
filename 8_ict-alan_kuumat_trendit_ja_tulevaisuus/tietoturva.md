@@ -1,3 +1,4 @@
-"jeejee" "hähää, sul on nyt konflikti
+<!-- AUTHOR: Jari Järvenpää -->
+# Kyberuhat 
 
 
