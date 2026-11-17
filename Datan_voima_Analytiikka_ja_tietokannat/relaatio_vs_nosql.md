@@ -121,6 +121,16 @@ Yksi tietokanta ei yleensä sovi yhtä hyvin kaikkiin tiedon käyttötapoihin. M
 4. Verrataan vaihtoehtoja tietojen yhdenmukaisuuden, viiveen, skaalautuvuuden, ylläpidon ja kustannusten perusteella.
 5. Yhdistetään eri malleja vain silloin, kun tietojen käyttötavat tai elinkaaret eroavat selvästi toisistaan.
 
+#### 4.2.2. Tietomallin valintaperusteet
+
+| Tarve | Sopiva tietomalli |
+|---|---|
+| Tiukat transaktiovaatimukset, jotka koskevat useita tietueita tai kohteita | Relaatiomalli |
+| Monimutkaiset objektit, joiden rakenne muuttuu, sekä JSON-pohjainen API | Dokumenttimalli |
+| Tiedon nopea haku avaimella tai välimuistin käyttö | Avain–arvo-malli |
+| Suuret, harvat telemetriatiedot, joita kirjoitetaan paljon | Sarakeperheet tai aikasarjat |
+| Monimutkaisten ja monitasoisten yhteyksien tutkiminen | Graafimalli |
+
 ### 4.3. Käyttökohteet
 
 
