@@ -363,7 +363,11 @@ Tällainen malli sopii tilanteisiin, joissa halutaan tutkia kohteiden välisiä 
 ## 6. Yhteenveto ja lähteet
 
 ### 6.1. Yhteenveto
-Yhteenvedetty.
+SQL:ää käytetään relaatiotietokantojen kanssa. Niissä tiedot järjestetään toisiinsa liittyviin taulukoihin. NoSQL sisältää useita tallennusmalleja: dokumenttimallin, avain–arvo-mallin, laajasarakkeisen mallin ja graafimallin. Mallit tallentavat tietoa eri tavoilla ja sopivat erilaisiin tehtäviin.
+
+**Tärkein johtopäätös:** NoSQL ei ole yksi tietty tallennusmalli, vaan ryhmä erilaisia ratkaisuja. SQL:n ja NoSQL:n valinta riippuu tietojen rakenteesta, niiden käyttötavoista ja sovelluksen vaatimuksista.
+
+Valinnassa pitää huomioida tietomallin helppouden lisäksi kyselyiden tyyppi, transaktioiden ja tietojen yhdenmukaisuuden vaatimukset, skaalautuvuus sekä ylläpidon kustannukset. Käytännön esimerkit osoittavat, että yhtä kaikille sopivaa ratkaisua ei ole. Joskus yksi tietokanta riittää, mutta joskus eri mallien yhdistäminen on hyödyllistä.
 
 
 ### 6.2. Lähteet
@@ -371,3 +375,28 @@ Yhteenvedetty.
     https://en.wikipedia.org/wiki/NoSQL
     https://en.wikipedia.org/wiki/SQL
     Trust me...
+
+    
+    Anderson, B. & Nicholson, B. SQL vs. NoSQL Databases: What's the Difference? IBM. Viitattu 16.11.2026.
+    [https://www.ibm.com/think/topics/sql-vs-nosql](https://www.ibm.com/think/topics/sql-vs-nosql)
+
+    Microsoft. 2025. Understand data models. Microsoft Learn, Azure Architecture Center. Viitattu 16.11.2026.
+    [https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/understand-data-store-models](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/understand-data-store-models)
+
+    Schaefer, L. What Is NoSQL? NoSQL Databases Explained. MongoDB. Viitattu 16.11.2026.
+    [https://www.mongodb.com/resources/basics/databases/nosql-explained](https://www.mongodb.com/resources/basics/databases/nosql-explained)
+
+    Redis. Redis Strings. Redis Documentation. Viitattu 16.11.2026.
+    [https://redis.io/docs/latest/develop/data-types/strings/](https://redis.io/docs/latest/develop/data-types/strings/)
+
+    Google Cloud. Schema design best practices. Bigtable Documentation. Viitattu 16.11.2026.
+    [https://docs.cloud.google.com/bigtable/docs/schema-design](https://docs.cloud.google.com/bigtable/docs/schema-design)
+
+    Neo4j. Tutorial: Create a graph data model. Neo4j Documentation. Viitattu 16.11.2026.
+    [https://neo4j.com/docs/getting-started/data-modeling/tutorial-data-modeling/](https://neo4j.com/docs/getting-started/data-modeling/tutorial-data-modeling/)
+
+    MongoDB. Transactions. MongoDB Manual. Viitattu 16.11.2026.
+    [https://www.mongodb.com/docs/manual/core/transactions/](https://www.mongodb.com/docs/manual/core/transactions/)
+
+    Brewer, E. 2017. Inside Cloud Spanner and the CAP Theorem. Google Cloud Blog. Viitattu 16.11.2026.
+    [https://cloud.google.com/blog/products/databases/inside-cloud-spanner-and-the-cap-theorem](https://cloud.google.com/blog/products/databases/inside-cloud-spanner-and-the-cap-theorem/)
