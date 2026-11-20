@@ -16,3 +16,7 @@ lähipiiristään rahoitusta yrityksen aloittamiseeen.
 - Starttiraha - Suomen valtion tarjoama rahoitus, jonka täytyy hakea ennen yrityksen perustamista.
 
     **Ja monta muuta**
+## Yrityksen perustaminen
+Yrityksen perustaminen alkaa ideasta mitä yritys tulee tekemään, mitä palvelua tai tuotetta kehitetään. 
+
+Yritys perustetaan, kun liiketoiminnan käynnistämiseen liittyvät valmistelut ja rahoitusasiat ovat kunnossa. Jokaisen yrityksen tavoite on päästä kannattavaksi elikkä saada voittoa.
