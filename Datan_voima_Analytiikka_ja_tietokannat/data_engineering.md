@@ -7,12 +7,11 @@ Big Data ja dataputket
  
 ### 2.1 Aiheen tausta
  
-- Mitä Big Data tarkoittaa?
-- Miksi suuria tietomääriä syntyy nykyään enemmän kuin koskaan?
-- Miten internet, pilvipalvelut ja IoT-laitteet ovat vaikuttaneet datan määrän kasvuun?
-- Miksi perinteiset tietojärjestelmät eivät aina riitä suurten tietomäärien käsittelyyn?
-- Miten Big Data ja dataputket ovat kehittyneet tietotekniikan mukana?
-- Miksi aihe on tärkeä nykyaikaisessa ohjelmistokehityksessä?
+Big Data tai toiselta nimeltään massadata tarkoittaa erittäin suuria ja monimuotoisia tietomääriä. Massadataa syntyy jatkuvasti eri lähteistä. Se voi sisältää esimerkiksi kuvia, tekstiä, videoita jne. Sen käsittely yleensä tarvitsee erityisiä teknologioita ja menetelmiä, jotta sitä pystyttäisiin käsittelemään tehokkaasti. Kaiken datan määrä kasvaa jatkuvasti, koska ihmiset ja laitteet tuottavat tietoa koko ajan.
+
+Internet, Pilvipalvelut ja IoT-laitteet vaikuttavat massadataan erilaisin tavoin. Internet mahdollistaa tiedon tuottamisen ja jakamisen maailmanlaajuisesti. Pilvipalvelut ovat tehneet tiedon keräämisestä ja käsittelystä helpompaa ja edullisempaa. IoT (Internet of Things) laitteet lähettävät jatkuvasti tietoa mikä kasvattaa datan määrää.
+
+Massadataa syntyy paljon ja nopeasti, johon perinteisten järjestelmien yhdellä palvelimella tehty käsittely ei aina riitä. Esimerkiksi tallennustila voi loppua, käsittely hidastua jne. Suurten tietomäärien käsittelyyn on kehitetty uusia teknologioita, kuten Kafka, Spark ja Hadoop. Dataputket taas ovat kehittyneet automatisoiduiksi järjestelmiksi, jotka pystyvät käsittelemään ja siirtämään dataa reaaliajassa.
  
 ## 2.2 Aiheen merkitys
 
