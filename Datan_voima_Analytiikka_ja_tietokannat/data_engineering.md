@@ -93,29 +93,26 @@ käytettävät teknologiat.
 
 ### 4.2 Menetelmät ja käytännöt
 
-ETL-prosessi on yksi yleisimmistä menetelmistä datan käsittelyssä.
-Prosessin aikana data kerätään lähteistä, muunnetaan haluttuun muotoon 
-ja tallennetaan kohdejärjestelmään.
+Big Datan käsittelyssä käytetään erilaisia prosesseja ja 
+teknologioita, jotta dataa voidaan käsitellä tehokkaasti. 
+Yksi yleisimmistä prosesseista on ETL (Extract, Transform, Load), 
+jossa dataa kerätään lähteestä, muokataan ja tallennetaan 
+tietovarastoon. Dataa voidaan käsitellä joko Batch Processing- 
+tai Stream Processing -menetelmällä. Batch Processing -menetelmällä
+tietoa käsitellään suurissa erissä tietyin aikavälein. 
+Stream Processing -menetelmällä tietoa käsitellään reaaliaikaisesti
+sen syntyessä.
 
-Batch Processing tarkoittaa datan käsittelyä suurina erinä ennalta 
-määritettyinä ajankohtina. Menetelmä soveltuu tilanteisiin, joissa
-reaaliaikainen käsittely ei ole välttämätöntä.
-
-Stream Processing mahdollistaa datan käsittelyn reaaliajassa heti 
-sen saapuessa järjestelmään. Tätä käytetään esimerkiksi 
-IoT-järjestelmissä ja verkkopalveluissa.
-
-Pilvipalvelut tarjoavat joustavan ympäristön suurten datamäärien 
-tallentamiseen ja käsittelyyn. Ne mahdollistavat resurssien nopean 
-skaalaamisen tarpeen mukaan.
-
-Hadoop, Apache Spark ja Apache Kafka ovat yleisesti käytettyjä 
-Big Data -teknologioita. Hadoop soveltuu hajautettuun tallennukseen, 
-Spark nopeaan analytiikkaan ja Kafka datavirtojen reaaliaikaiseen 
-käsittelyyn.
-
-Menetelmän valinta riippuu käyttötarkoituksesta, datan määrästä sekä 
-siitä, käsitelläänkö dataa reaaliaikaisesti vai eräajona.
+Datankäsittelyssä hyödynnetään usein pilvipalveluita, jotka
+tarjoavat joustavan tallennus- ja laskentakapasiteetin. 
+Pilvipalveluiden etuna on myös niiden hyvä skaalautuvuus 
+kasvaville datamäärille. Big Datan käsittelyssä käytetään 
+teknologioita, kuten Hadoop, Apache Spark ja Apache Kafka.
+Hadoop mahdollistaa datan hajautetun käsittelyn, Apache Spark
+nopeuttaa datan analysointia ja Apache Kafka tukee reaaliaikaista
+datansiirtoa. Käsittelymenetelmän valinta riippuu 
+käyttötarkoituksesta, datan määrästä sekä siitä, käsitelläänkö 
+dataa reaaliaikaisesti vai tietyin aikavälein.
 
 ### 4.3 Käyttökohteet
 
