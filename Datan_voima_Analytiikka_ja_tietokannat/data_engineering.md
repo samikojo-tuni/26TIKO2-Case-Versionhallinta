@@ -137,20 +137,13 @@ Analytiikka
 
 ### 4.1 Tarkoitus ja toimintaperiaatteet
 
-- Mitä ongelmia Big Datan avulla ratkaistaan?
-- Mikä on dataputken päätarkoitus?
-- Miten data kerätään, siirretään, käsitellään ja tallennetaan?
-- Mitkä ovat dataputken tärkeimmät vaiheet?
-- Mitkä tekijät vaikuttavat dataputken toimivuuteen?
+Big data tai massadata on suuria tietomääriä. Sen avulla hyödynnetään ja kerätään näitä tietomääriä. Pystytään analysoimaan esimerkiksi asiakkaiden käyttäytymistä, tehdä ennustuksia tulevaisuudesta tai havaita trendejä. Dataputkien avulla taas siirretään automaattisesti dataa eri järjestelmien välillä. Sitä kerätään erilaisista datalähteistä ja minkä jälkeen sitä käsitellään, muokataan ja tallenetaan analysointia varten. Dataputki siis kerää, siirtää, muokkaa, tallentaa ja analysoi dataa. Dataputkien toimivuuteen vaikuttavat esimerkiksi datan laatu, järjestelmien suorituskyky, käytettävät teknologiat ja tietoturva.
 
 ### 4.2 Menetelmät ja käytännöt
 
-- ETL-prosessi
-- Batch Processing
-- Stream Processing
-- Pilvipalveluiden käyttö datankäsittelyssä
-- Hadoop-, Spark- ja Kafka-teknologiat
-- Menetelmän valinta käyttötarkoituksen mukaan
+Big Datan käsittelyssä käytetään erilaisia prosesseja ja teknologioita, jotta dataa voi käsitellä tehokkaasti. Yksi yleisemmistä prosesseista on ETL (Extract, Transform, Load), jossa dataa kerätään lähteestä, muokataan ja tallennetaan tietovarastoon. Dataa voidaan myös käsitellä joko Batch Prosessing- tai Stream Processing -menetelmällä. Batch Processing -menetelmällä tietoa käsitellään isoissa erissä, tietyin aikavälein. Stream Processing -menetelmällä tietoa käsitellään reaaliaikaisesti sen syntyessä
+
+Datankäsittelyssä hyödynnetään paljon pilvipalveluita. Ne tarjoavat joustavan tallennus- ja laskentakapasiteetin. Big Datan käsittelyssä käytetään myös teknologioita, kuten Hadoop, Apache Spark ja Apache Kafka. Hadoop mahdollistaa data hajautetun käsittelyn, Apache Spark nopeuttaa datan käsittelyä ja Apache Kafka toimii reaaliaikaisen datan siirtämisessä. Käsittelymenetelmän valinta riippuu käyttötarkoituksesta, datan määrästä ja jos dataa käsitellään reaaliaikaisesti tai tietyin aikavälein.
 
 ### 4.3 Käyttökohteet
 
