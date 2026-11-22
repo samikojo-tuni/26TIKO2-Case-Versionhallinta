@@ -41,26 +41,96 @@ tiedon hyödyntämisen ja prosessien automatisoinnin.
 ## 3. Keskeiset käsitteet
  
 ### 3.1 Peruskäsitteet
- 
-- Big Data
-- Dataputki (Data Pipeline)
-- Datalähde
-- ETL (Extract, Transform, Load)
-- Data Warehouse
-- Reaaliaikainen data-analytiikka
-- Hadoop
-- Apache Spark
-- Apache Kafka
+
+#### Big Data
+
+Big Data tarkoittaa erittäin suuria ja monimutkaisia tietomääriä, joita 
+perinteiset tietojenkäsittelymenetelmät eivät pysty käsittelemään tehokkaasti. 
+Big Dataa syntyy jatkuvasti esimerkiksi sosiaalisessa mediassa, IoT-laitteissa, 
+verkkopalveluissa ja yritysten liiketoimintajärjestelmissä.
+
+#### Dataputki (Data Pipeline)
+
+Dataputki on prosessi, joka siirtää dataa lähteestä kohdejärjestelmään. 
+Dataputken tehtävänä on kerätä, käsitellä, muuntaa ja toimittaa data analysointia 
+tai tallennusta varten.
+
+#### Datalähde
+
+Datalähde on paikka, josta data kerätään. Datalähteitä voivat olla 
+esimerkiksi tietokannat, verkkosovellukset, sensorit, lokitiedostot 
+tai sosiaalisen median palvelut.
+
+#### ETL (Extract, Transform, Load)
+
+ETL on prosessi, jossa data ensin kerätään lähteistä (Extract), 
+sitten muunnetaan sopivaan muotoon (Transform) ja lopuksi tallennetaan
+kohdejärjestelmään (Load). ETL on keskeinen osa monia dataputkia.
+
+#### Data Warehouse
+
+Data Warehouse eli tietovarasto on järjestelmä, johon kerätään ja 
+tallennetaan dataa useista eri lähteistä. Tietovarastoa käytetään 
+erityisesti raportointiin, analytiikkaan ja liiketoimintatiedon käsittelyyn.
+
+#### Reaaliaikainen data-analytiikka
+
+Reaaliaikainen data-analytiikka tarkoittaa datan analysointia heti 
+sen syntymisen jälkeen. Tämän avulla voidaan havaita tapahtumia, 
+poikkeamia tai trendejä lähes välittömästi.
+
+#### Hadoop
+
+Hadoop on avoimen lähdekoodin ohjelmistokehys suurten tietomäärien 
+hajautettuun tallennukseen ja käsittelyyn. Se mahdollistaa datan 
+käsittelyn useilla palvelimilla samanaikaisesti.
+
+#### Apache Spark
+
+Apache Spark on nopea hajautetun datankäsittelyn alusta. Sitä käytetään 
+suurten tietomäärien analysointiin, koneoppimiseen sekä reaaliaikaiseen 
+datankäsittelyyn.
+
+#### Apache Kafka
+
+Apache Kafka on hajautettu viestinvälitysjärjestelmä, joka mahdollistaa 
+suurten tietovirtojen käsittelyn reaaliaikaisesti. Sitä käytetään usein
+dataputkissa datan siirtämiseen järjestelmien välillä.
  
 ### 3.2 Käsitteiden väliset yhteydet
- 
-- Miten data liikkuu lähteestä analysointiin?
-- Mikä ero on datalähteen, dataputken ja tietovaraston välillä?
-- Miten ETL liittyy dataputkeen?
-- Miten analytiikka hyödyntää dataputken kautta saatua dataa?
-- Yksinkertainen kaavio datan kulusta:
 
-Datalähde ↓ Dataputki ↓ Käsittely ↓ Tallennus ↓ Analytiikka
+Big Data -järjestelmässä data liikkuu useiden vaiheiden kautta ennen 
+kuin sitä voidaan hyödyntää analytiikassa. Prosessi alkaa datalähteistä, 
+joista tieto kerätään ja siirretään dataputken kautta käsiteltäväksi. 
+Käsittelyn jälkeen data tallennetaan tietovarastoon tai muuhun 
+tallennusjärjestelmään, josta analytiikkatyökalut voivat käyttää sitä.
+
+Datalähde, dataputki ja tietovarasto ovat eri osia datan 
+käsittelyprosessissa. Datalähde tuottaa dataa, dataputki siirtää 
+ja käsittelee sitä, ja tietovarasto säilyttää dataa myöhempää analysointia 
+varten. Jokaisella osalla on oma tärkeä tehtävänsä tiedonhallinnassa.
+
+ETL-prosessi liittyy läheisesti dataputkeen. ETL:n aikana data ensin 
+kerätään eri lähteistä (Extract), muunnetaan analysointiin sopivaan 
+muotoon (Transform) ja lopuksi tallennetaan kohdejärjestelmään (Load). 
+Monet dataputket perustuvat juuri tähän toimintamalliin.
+
+Analytiikka hyödyntää dataputken kautta saatua dataa tuottamalla tietoa,
+raportteja ja havaintoja päätöksenteon tueksi. Laadukas dataputki varmistaa,
+että analysoitava data on ajantasaista, yhtenäistä ja luotettavaa.
+
+#### Datan kulku
+
+```text
+Datalähde
+    ↓
+Dataputki
+    ↓
+Käsittely
+    ↓
+Tallennus
+    ↓
+Analytiikka
 
 
 ## 4. Aiheen kuvaus
