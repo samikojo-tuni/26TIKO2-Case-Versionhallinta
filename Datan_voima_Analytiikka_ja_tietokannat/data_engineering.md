@@ -137,11 +137,11 @@ Analytiikka
 
 ### 4.1 Tarkoitus ja toimintaperiaatteet
 
-Big Dataa käytetään ratkaisemaan ongelmia, jotka liittyvät suurten 
-tietomäärien keräämiseen, käsittelyyn ja analysointiin. Organisaatiot
-voivat hyödyntää Big Dataa esimerkiksi asiakaskäyttäytymisen 
-ymmärtämisessä, liiketoiminnan kehittämisessä ja päätöksenteon 
-tukemisessa.
+Big Data mahdollistaa erittäin suurten tietomäärien tehokkaan 
+hyödyntämisen ja analysoinnin. Sen avulla organisaatiot voivat 
+kerätä, käsitellä ja tutkia dataa saadakseen arvokasta tietoa 
+liiketoiminnan tueksi. Big Dataa käytetään muun muassa asiakastarpeiden
+ tunnistamiseen, toiminnan kehittämiseen sekä päätöksenteon tukemiseen.
 
 Dataputken päätarkoituksena on siirtää data tehokkaasti lähteestä 
 kohdejärjestelmään. Samalla dataputki huolehtii datan käsittelystä
