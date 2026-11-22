@@ -137,66 +137,162 @@ Analytiikka
 
 ### 4.1 Tarkoitus ja toimintaperiaatteet
 
-Big data tai massadata on suuria tietomääriä. Sen avulla hyödynnetään ja kerätään näitä tietomääriä. Pystytään analysoimaan esimerkiksi asiakkaiden käyttäytymistä, tehdä ennustuksia tulevaisuudesta tai havaita trendejä. Dataputkien avulla taas siirretään automaattisesti dataa eri järjestelmien välillä. Sitä kerätään erilaisista datalähteistä ja minkä jälkeen sitä käsitellään, muokataan ja tallenetaan analysointia varten. Dataputki siis kerää, siirtää, muokkaa, tallentaa ja analysoi dataa. Dataputkien toimivuuteen vaikuttavat esimerkiksi datan laatu, järjestelmien suorituskyky, käytettävät teknologiat ja tietoturva.
+Big Data mahdollistaa erittäin suurten tietomäärien tehokkaan 
+hyödyntämisen ja analysoinnin. Sen avulla organisaatiot voivat 
+kerätä, käsitellä ja tutkia dataa saadakseen arvokasta tietoa 
+liiketoiminnan tueksi. Big Dataa käytetään muun muassa asiakastarpeiden
+ tunnistamiseen, toiminnan kehittämiseen sekä päätöksenteon tukemiseen.
 
-### 4.2 Menetelmät ja käytännöt
+Dataputken päätarkoituksena on siirtää data tehokkaasti lähteestä 
+kohdejärjestelmään. Samalla dataputki huolehtii datan käsittelystä
+ja muuntamisesta sellaiseen muotoon, että sitä voidaan hyödyntää 
+analytiikassa.
 
-Big Datan käsittelyssä käytetään erilaisia prosesseja ja teknologioita, jotta dataa voi käsitellä tehokkaasti. Yksi yleisemmistä prosesseista on ETL (Extract, Transform, Load), jossa dataa kerätään lähteestä, muokataan ja tallennetaan tietovarastoon. Dataa voidaan myös käsitellä joko Batch Prosessing- tai Stream Processing -menetelmällä. Batch Processing -menetelmällä tietoa käsitellään isoissa erissä, tietyin aikavälein. Stream Processing -menetelmällä tietoa käsitellään reaaliaikaisesti sen syntyessä
+Data kerätään erilaisista lähteistä, kuten tietokannoista,
+verkkopalveluista, sensoreista ja sovelluksista. Tämän jälkeen data
+siirretään dataputken kautta käsiteltäväksi, tallennetaan sopivaan 
+järjestelmään ja lopulta analysoidaan.
 
-Datankäsittelyssä hyödynnetään paljon pilvipalveluita. Ne tarjoavat joustavan tallennus- ja laskentakapasiteetin. Big Datan käsittelyssä käytetään myös teknologioita, kuten Hadoop, Apache Spark ja Apache Kafka. Hadoop mahdollistaa data hajautetun käsittelyn, Apache Spark nopeuttaa datan käsittelyä ja Apache Kafka toimii reaaliaikaisen datan siirtämisessä. Käsittelymenetelmän valinta riippuu käyttötarkoituksesta, datan määrästä ja jos dataa käsitellään reaaliaikaisesti tai tietyin aikavälein.
+Dataputken tärkeimpiä vaiheita ovat datan kerääminen, siirtäminen, 
+käsittely, tallennus ja analysointi. Jokainen vaihe vaikuttaa koko 
+järjestelmän tehokkuuteen.
+
+Dataputken toimivuuteen vaikuttavat muun muassa datan määrä,
+tiedonsiirron nopeus, järjestelmien luotettavuus, tietoturva sekä 
+käytettävät teknologiat.
+
+### 4.2 Datan käsittelyn menetelmät
+
+Big Datan tehokas hyödyntäminen edellyttää erilaisia menetelmiä 
+ja teknologioita datan keräämiseen, käsittelyyn ja tallentamiseen. 
+Organisaatiot käyttävät erilaisia ratkaisuja riippuen datan määrästä, 
+käsittelynopeudesta ja liiketoiminnan tarpeista.
+
+Yksi tärkeimmistä menetelmistä on ETL-prosessi (Extract, Transform, 
+Load). Sen aikana data kerätään eri lähteistä, muunnetaan yhtenäiseen 
+muotoon ja siirretään tietovarastoon jatkokäyttöä varten. ETL auttaa 
+varmistamaan, että analysoitava data on laadukasta ja helposti
+ hyödynnettävää.
+
+Dataa voidaan käsitellä joko eräajona tai reaaliaikaisesti. Batch 
+Processing soveltuu tilanteisiin, joissa tietoa käsitellään suurina
+ kokonaisuuksina esimerkiksi kerran päivässä tai kerran tunnissa. 
+ Stream Processing puolestaan mahdollistaa datan analysoinnin 
+ välittömästi sen saapuessa järjestelmään.
+
+Nykyaikaisessa datankäsittelyssä pilvipalveluilla on merkittävä 
+rooli. Ne tarjoavat joustavia resursseja datan tallentamiseen, 
+käsittelyyn ja analysointiin sekä mahdollistavat kapasiteetin 
+kasvattamisen tarpeen mukaan.
+
+Big Data -ympäristöissä käytetään usein teknologioita, kuten 
+Hadoopia, Apache Sparkia ja Apache Kafkaa. Hadoop soveltuu 
+suurten datamäärien hajautettuun käsittelyyn, Spark tarjoaa nopean
+ analytiikka-alustan ja Kafka mahdollistaa jatkuvien datavirtojen
+  tehokkaan välittämisen järjestelmien välillä.
+
+Sopivan käsittelymenetelmän valintaan vaikuttavat muun muassa 
+datan määrä, järjestelmän suorituskykyvaatimukset sekä se, 
+kuinka nopeasti tietoa tarvitaan päätöksenteon tueksi.
 
 ### 4.3 Käyttökohteet
 
-- Sosiaalinen media
-- Verkkokaupat
-- Suoratoistopalvelut
-- IoT-laitteet
-- Finanssiala
-- Terveydenhuolto
+Big Dataa käytetään laajasti eri toimialoilla. Sosiaalisen median 
+palvelut hyödyntävät sitä käyttäjien toiminnan analysointiin ja 
+sisällön suositteluun.
 
-### 4.4 Hyödyt ja mahdollisuudet
+Verkkokaupat käyttävät dataa asiakkaiden ostokäyttäytymisen 
+analysointiin, kun taas suoratoistopalvelut hyödyntävät sitä 
+personoitujen sisältösuositusten tarjoamiseen.
 
-- Tietoon perustuva päätöksenteko
-- Parempi liiketoiminta-analytiikka
-- Personoidut palvelut
-- Prosessien automatisointi
-- Reaaliaikainen seuranta
-- Tekoälyn hyödyntäminen
+IoT-laitteet tuottavat jatkuvasti suuria määriä dataa, jota voidaan 
+analysoida reaaliajassa. Finanssialalla Big Dataa käytetään
+esimerkiksi petosten tunnistamiseen ja riskienhallintaan.
+
+Terveydenhuollossa dataa voidaan hyödyntää potilastietojen 
+analysointiin, sairauksien ennustamiseen sekä hoitoprosessien 
+kehittämiseen.
+
+### 4.4 Big Datan edut ja mahdollisuudet
+
+Big Data auttaa organisaatioita tekemään tietoon perustuvia
+päätöksiä. Analysoimalla suuria tietomääriä voidaan tunnistaa 
+trendejä, ennakoida muutoksia ja parantaa liiketoiminnan 
+tehokkuutta.
+
+Datan hyödyntäminen mahdollistaa tarkemman liiketoiminta-analytiikan 
+sekä personoidut palvelut, jotka vastaavat paremmin asiakkaiden 
+tarpeisiin.
+
+Dataputket tukevat prosessien automatisointia ja reaaliaikaista
+seurantaa. Lisäksi Big Data tarjoaa perustan tekoälyn ja 
+koneoppimisen hyödyntämiselle.
 
 ### 4.5 Haasteet, riskit ja rajoitukset
 
-- Tietoturva
-- Tietosuoja
-- Datan laatu
-- Kustannukset
-- Suurten järjestelmien monimutkaisuus
-- Teknologioiden ylläpito
+Big Datan käytössä on myös haasteita. Tietoturva ja tietosuoja 
+ovat keskeisiä kysymyksiä, koska järjestelmät käsittelevät usein 
+suuria määriä arkaluonteista tietoa.
+
+Datan laatu vaikuttaa suoraan analyysien luotettavuuteen. 
+Virheellinen tai puutteellinen data voi johtaa epäluotettaviin 
+tuloksiin.
+
+Suurten järjestelmien rakentaminen ja ylläpito voivat aiheuttaa 
+merkittäviä kustannuksia. Lisäksi Hadoopin, Sparkin ja Kafkan 
+kaltaiset teknologiat voivat lisätä järjestelmän monimutkaisuutta 
+ja ylläpitotarvetta.
 
 ## 5. Esimerkki
 
 ### 5.1 Tilanteen kuvaus
 
-Videopalvelu, kuten YouTube tai Netflix:
+Hyvä esimerkki Big Datan hyödyntämisestä on videopalvelu, 
+kuten YouTube tai Netflix. Miljoonat käyttäjät katsovat videoita 
+päivittäin eri laitteilla ja eri puolilla maailmaa.
 
-- Käyttäjät katsovat videoita jatkuvasti.
-- Järjestelmä kerää tietoa katselukerroista.
-- Dataa syntyy erittäin suuria määriä.
-- Tarkoituksena on tarjota käyttäjälle sopivia suosituksia.
+Jokainen katselukerta, hakutoiminto, arviointi ja sisällön 
+valinta tuottaa uutta dataa. Tämän seurauksena järjestelmä
+kerää jatkuvasti erittäin suuria tietomääriä.
+
+Palvelun tavoitteena on hyödyntää tätä dataa käyttäjien
+mieltymysten ymmärtämiseen ja tarjota mahdollisimman osuvia
+sisältösuosituksia.
 
 ### 5.2 Ratkaisu tai toimintatapa
 
-- Käyttäjien toiminta tallennetaan.
-- Data siirtyy dataputken kautta käsiteltäväksi.
-- Tiedot tallennetaan tietovarastoon.
-- Data analysoidaan.
-- Tuloksia käytetään sisältösuositusten luomiseen.
+Käyttäjien toiminta tallennetaan järjestelmään datana. 
+Tiedot voivat sisältää esimerkiksi katsottuja videoita, 
+katseluaikaa, hakuhistoriaa ja käyttäjän antamia arvioita.
+
+Kerätty data siirtyy dataputken kautta käsiteltäväksi. 
+Käsittelyn aikana data puhdistetaan, järjestellään ja
+muunnetaan analysointiin sopivaan muotoon.
+
+Tämän jälkeen tiedot tallennetaan tietovarastoon, jossa
+niitä voidaan säilyttää ja hyödyntää myöhemmin. Tallennettua
+dataa analysoidaan erilaisilla työkaluilla ja menetelmillä.
+
+Analyysin tuloksia käytetään sisältösuositusten luomiseen. 
+Näin palvelu voi ehdottaa käyttäjälle videoita ja ohjelmia, 
+jotka vastaavat hänen kiinnostuksen kohteitaan.
 
 ### 5.3 Tulokset ja havainnot
 
-- Käyttäjät saavat osuvampia suosituksia.
-- Yritys ymmärtää paremmin käyttäjien toimintaa.
-- Päätöksenteko perustuu dataan.
-- Esimerkki osoittaa dataputkien merkityksen Big Data -ympäristössä.
+Big Datan ja dataputkien hyödyntämisen ansiosta käyttäjät 
+saavat tarkempia ja henkilökohtaisempia suosituksia. 
+Tämä parantaa käyttökokemusta ja auttaa käyttäjiä löytämään 
+heitä kiinnostavaa sisältöä.
+
+Yritys saa samalla paremman käsityksen käyttäjien 
+käyttäytymisestä, mieltymyksistä ja palvelun käytöstä. 
+Näiden tietojen avulla voidaan kehittää palvelua sekä 
+tehdä liiketoimintaa koskevia päätöksiä.
+
+Esimerkki osoittaa, kuinka tärkeä rooli dataputkilla on 
+Big Data -ympäristössä. Ilman tehokasta datan keräämistä, 
+käsittelyä ja analysointia suurten tietomäärien hyödyntäminen
+olisi huomattavasti vaikeampaa.
 
 ## 6. Yhteenveto ja lähteet
 
