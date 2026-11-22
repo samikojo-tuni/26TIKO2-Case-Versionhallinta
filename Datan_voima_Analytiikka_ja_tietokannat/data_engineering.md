@@ -161,28 +161,39 @@ Dataputken toimivuuteen vaikuttavat muun muassa datan määrä,
 tiedonsiirron nopeus, järjestelmien luotettavuus, tietoturva sekä 
 käytettävät teknologiat.
 
-### 4.2 Menetelmät ja käytännöt
+### 4.2 Datan käsittelyn menetelmät
 
-Big Datan käsittelyssä käytetään erilaisia prosesseja ja 
-teknologioita, jotta dataa voidaan käsitellä tehokkaasti. 
-Yksi yleisimmistä prosesseista on ETL (Extract, Transform, Load), 
-jossa dataa kerätään lähteestä, muokataan ja tallennetaan 
-tietovarastoon. Dataa voidaan käsitellä joko Batch Processing- 
-tai Stream Processing -menetelmällä. Batch Processing -menetelmällä
-tietoa käsitellään suurissa erissä tietyin aikavälein. 
-Stream Processing -menetelmällä tietoa käsitellään reaaliaikaisesti
-sen syntyessä.
+Big Datan tehokas hyödyntäminen edellyttää erilaisia menetelmiä 
+ja teknologioita datan keräämiseen, käsittelyyn ja tallentamiseen. 
+Organisaatiot käyttävät erilaisia ratkaisuja riippuen datan määrästä, 
+käsittelynopeudesta ja liiketoiminnan tarpeista.
 
-Datankäsittelyssä hyödynnetään usein pilvipalveluita, jotka
-tarjoavat joustavan tallennus- ja laskentakapasiteetin. 
-Pilvipalveluiden etuna on myös niiden hyvä skaalautuvuus 
-kasvaville datamäärille. Big Datan käsittelyssä käytetään 
-teknologioita, kuten Hadoop, Apache Spark ja Apache Kafka.
-Hadoop mahdollistaa datan hajautetun käsittelyn, Apache Spark
-nopeuttaa datan analysointia ja Apache Kafka tukee reaaliaikaista
-datansiirtoa. Käsittelymenetelmän valinta riippuu 
-käyttötarkoituksesta, datan määrästä sekä siitä, käsitelläänkö 
-dataa reaaliaikaisesti vai tietyin aikavälein.
+Yksi tärkeimmistä menetelmistä on ETL-prosessi (Extract, Transform, 
+Load). Sen aikana data kerätään eri lähteistä, muunnetaan yhtenäiseen 
+muotoon ja siirretään tietovarastoon jatkokäyttöä varten. ETL auttaa 
+varmistamaan, että analysoitava data on laadukasta ja helposti
+ hyödynnettävää.
+
+Dataa voidaan käsitellä joko eräajona tai reaaliaikaisesti. Batch 
+Processing soveltuu tilanteisiin, joissa tietoa käsitellään suurina
+ kokonaisuuksina esimerkiksi kerran päivässä tai kerran tunnissa. 
+ Stream Processing puolestaan mahdollistaa datan analysoinnin 
+ välittömästi sen saapuessa järjestelmään.
+
+Nykyaikaisessa datankäsittelyssä pilvipalveluilla on merkittävä 
+rooli. Ne tarjoavat joustavia resursseja datan tallentamiseen, 
+käsittelyyn ja analysointiin sekä mahdollistavat kapasiteetin 
+kasvattamisen tarpeen mukaan.
+
+Big Data -ympäristöissä käytetään usein teknologioita, kuten 
+Hadoopia, Apache Sparkia ja Apache Kafkaa. Hadoop soveltuu 
+suurten datamäärien hajautettuun käsittelyyn, Spark tarjoaa nopean
+ analytiikka-alustan ja Kafka mahdollistaa jatkuvien datavirtojen
+  tehokkaan välittämisen järjestelmien välillä.
+
+Sopivan käsittelymenetelmän valintaan vaikuttavat muun muassa 
+datan määrä, järjestelmän suorituskykyvaatimukset sekä se, 
+kuinka nopeasti tietoa tarvitaan päätöksenteon tueksi.
 
 ### 4.3 Käyttökohteet
 
