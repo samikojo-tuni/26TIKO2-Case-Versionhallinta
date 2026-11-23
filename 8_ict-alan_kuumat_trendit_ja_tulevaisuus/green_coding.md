@@ -1,6 +1,8 @@
 # Green coding
 
-
+Why is software green yet.
+Bisnes motivation and long thinking is why we are not there yet.
+In enterprices focus is building new features as fast as possible.
 ## Definition
 
  It focuses on the environmental dimension of sustainability.
@@ -26,3 +28,31 @@ The users of these grown websites have increased demands of what a website shoul
 ## Developer productivity / code efficiency
 
 Software developers holds developer efficiency more important, than code efficiency.
+Developers need to be productive.
+
+## Why focus on green software
+
+Main focus is tuo reduce the amount or reseources it uses and to be cost effective in relation the energy we use.
+Part of green is that is sustainability also by the sustainability institue's definition.
+
+## Future
+There might be legal oblications coming in near future. The Europen Union has regualtions. For example the Carbon Border Adjustment Mechanism (CBAM), which impose tariffs on greenhouse gas emisiions. These regualtions currently apply only to heavily polluting industries. However it's expected that later on EU will apply these regualtions to all goods and services.
+Nom it's a good time to start preparing for these future regulations by focusing on greener software.
+
+## In software development
+
+Main idea is to eliminate waste.
+Unitilized work hours, unused code, or unused features can be considered waste.
+Technical tools is to choose the rigth tools, architecture an efficient wqay to programming that tries to use as litttle recources as possible.
+
+## Programming language
+It's important to chooce the right programming language in which tthe project will be written.
+Comipiling languages are clearly faster and more efficient when compared to interpreted languages. C, C++ and Rust are in the top three when considering energy efficient of speed.
+Other noteworthy observation is, that faster is not always more green efficient.
+Best time performance for web contant rendering can be achieved by Vanilla Javascript when compared to other some of the most used frameworks.
+According to benchmarks Rust based Actix, C# based ASP.net and Go Based Fiber are multible times more performant than Node.js with Exxpress or Django with Python.
+
+## Source
+
+Green coding: Considering environmental sustainability while building software.
+Hrivelä Jaakko, diblomityö.
