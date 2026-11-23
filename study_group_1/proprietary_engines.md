@@ -23,11 +23,11 @@ Frostbite 1 game engine which made its debut in the 2008 video game Battlefield:
 
 ### The HPL Engine
 
-
+pus
 ### Sources
 
 <https://www.remedygames.com/article/about-game-engines>
 <https://control.fandom.com/wiki/Northlight>
 <https://steamdb.info/tech/Engine/Frostbite/>
-
+<https://news.xbox.com/en-us/2025/12/11/introducing-ontos-frictional-games-spiritual-successor-to-soma/>
 
