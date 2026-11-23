@@ -18,7 +18,7 @@ To gain a wider audience, one must still use WebGL.
 
 ### Sources
 
-WebGPU Working Group. Retrieved 17.11.2026, from [Webgpu.org](https://webgpu.org/)  
-Élie Michel and contributors. (2025) *Introduction.* Retrieved 17.11.2026, from [Élie Michel on GitHub.io](https://eliemichel.github.io/LearnWebGPU/introduction.html)  
-WebGL Public Wiki. (2011) *Getting Started.* Retrieved 17.11.2026, from [Khronos.org](https://wikis.khronos.org/webgl/Getting_Started)  
-Three.js Roadmap blog (april 2026) Retrieved 23.11.2026, from [Threejsroadmap.com](https://threejsroadmap.com/blog/webgl-vs-webgpu-explained)  
+- WebGPU Working Group. *WebGPU.* Retrieved 17.11.2026, from [Webgpu.org](https://webgpu.org/)  
+- Élie Michel and contributors. (2025) *Introduction.* Retrieved 17.11.2026, from [Élie Michel on GitHub.io](https://eliemichel.github.io/LearnWebGPU/introduction.html)  
+- WebGL Public Wiki. (2011) *Getting Started.* Retrieved 17.11.2026, from [Khronos.org](https://wikis.khronos.org/webgl/Getting_Started)  
+- Three.js Roadmap blog (april 2026) *WebGL vs. WebGPU Explained.* Retrieved 23.11.2026, from [Threejsroadmap.com](https://threejsroadmap.com/blog/webgl-vs-webgpu-explained)  
