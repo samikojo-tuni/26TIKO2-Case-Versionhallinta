@@ -16,9 +16,25 @@ WebGPU is an improvement on WebGL's core limitations like graphics and performan
 The problem with WebGPU is however that it's support is still narrow. As of late 2024, WebGPU is only available in Chrome and Edge as a stable feature while locked behind an experimental flag on Safari and Firefox.
 To gain a wider audience, one must still use WebGL.
 
+## Notable games
+
+There aren't many games made with WebGL or WebGPU, because browsers create many constraints for game developers, but here are a couple more notable games for both WebGL and WebGPU.
+
+### WebGL
+
+- Shell shockers
+- HexGL
+
+### WebGPU
+
+- Messenger
+- Maad maxxing
+
+---
+
 ### Sources
 
-- WebGPU Working Group. *WebGPU.* Retrieved 17.11.2026, from [Webgpu.org](https://webgpu.org/)  
-- Élie Michel and contributors. (2025) *Introduction.* Retrieved 17.11.2026, from [Élie Michel on GitHub.io](https://eliemichel.github.io/LearnWebGPU/introduction.html)  
-- WebGL Public Wiki. (2011) *Getting Started.* Retrieved 17.11.2026, from [Khronos.org](https://wikis.khronos.org/webgl/Getting_Started)  
-- Three.js Roadmap blog (april 2026) *WebGL vs. WebGPU Explained.* Retrieved 23.11.2026, from [Threejsroadmap.com](https://threejsroadmap.com/blog/webgl-vs-webgpu-explained)  
+- WebGPU Working Group. *WebGPU.* Retrieved 17.11.2026, from [Webgpu.org](https://webgpu.org/)
+- Élie Michel and contributors. (2025) *Introduction.* Retrieved 17.11.2026, from [Élie Michel on GitHub.io](https://eliemichel.github.io/LearnWebGPU/introduction.html)
+- WebGL Public Wiki. (2011) *Getting Started.* Retrieved 17.11.2026, from [Khronos.org](https://wikis.khronos.org/webgl/Getting_Started)
+- Three.js Roadmap blog (april 2026) *WebGL vs. WebGPU Explained.* Retrieved 23.11.2026, from [Threejsroadmap.com](https://threejsroadmap.com/blog/webgl-vs-webgpu-explained)
