@@ -17,9 +17,17 @@ Godot advertises itself to having **"Intuitive scene-driven design"**, where you
 You can also make your own component within the engine using the scenes. You can shares these to other developers as addons and templates.
 
 ## Community
+Godot has its own Godot Forum, Discord and Reddit. Godot also has its own Official Social Network such as Bluesky, Mastodon, Youtube and Twitch. 
+
+As Godot is free and open source community-driven game engine, developers can volunteer to contribute to Godot engines development through offering code, giving feedback, testing or donating money.
+
+Godot also has it's own document showcasing Godot Engines features.
 
 ## Sources
 
 - [Godotengine.org](https://godotengine.org/features/)
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Godot_(game_engine))
+
+- [Godot Engine documentation](https://docs.godotengine.org/en/stable/)
+
