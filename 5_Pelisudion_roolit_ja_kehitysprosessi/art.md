@@ -15,3 +15,4 @@ Konseptitaiteen rooli etenee suurinpiirtein seuraavin vaihein:
 ### Tyylioppaat
 
 Peliä kehittäessä luodaan tyyliopas, joka auttaa kaikkia suunnittelijoita pysymään samassa teemassa. Tyylioppas välittää pelin visuaalisen teeman ja säännöt kuten väripaletti, valaistus ja muotokieli. Tyyliopas välittää pelin atmosfäärin ja auttaa tiimiä pysymään samalla sivulla. Tyylioppaan perimmäinen tarkoitus on kommunikoida visiota ja tavoitteita tekijätiimille.
+
