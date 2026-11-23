@@ -23,6 +23,12 @@ As Godot is free and open source community-driven game engine, developers can vo
 
 Godot also has it's own document showcasing Godot Engines features.
 
+## Notable games
+- Slay the Spire 2
+- Cruelty Squad
+- Dome Keeper
+- Buckshot Roulette
+
 ## Sources
 
 - [Godotengine.org](https://godotengine.org/features/)
