@@ -22,9 +22,12 @@ For instance Remedy uses their own Northlight game engines because it allows the
 Frostbite 1 game engine which made its debut in the 2008 video game Battlefield: Bad Company. The engine was developed with and HDR Audio and destruction 1.0 and as new games released Frostbite engine was upgraded according to their needs. Over the years of developing Frostbite engine its newest version is called just Frostbite dropping the version numbers.
 
 ### The HPL Engine
+
 Frictional Games which is a smaller studio based in sweden has developed their own game engine called HPL engine.
 
 For example HPL Engine 1 was used for the Penumbra series and new iterations were made as new games such as Soma and Game series such as Amnesia came out. The newest version is HPL Engine 4 which is used in their development of Ontos (2027).
+
+---
 
 ### Sources
 
