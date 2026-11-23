@@ -19,9 +19,9 @@ You can also make your own component within the engine using the scenes. You can
 ## Community
 Godot has its own Godot Forum, Discord and Reddit. Godot also has its own Official Social Network such as Bluesky, Mastodon, Youtube and Twitch. 
 
-As Godot is free and open source community-driven game engine, developers can volunteer to contribute to Godot engines development through offering code, giving feedback, testing or donating money.
+As Godot is free and open source community-driven game engine, so developers can volunteer to contribute to Godot engines development through offering code, giving feedback, testing or donating money.
 
-Godot also has it's own document showcasing Godot Engines features.
+Godot also has it's own document showcasing Godot Engines features. These documents can be added to or proofread by the volunteers, with set guidelines.
 
 ## Notable games
 - Slay the Spire 2
