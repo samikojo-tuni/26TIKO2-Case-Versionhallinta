@@ -26,10 +26,11 @@ Frictional Games which is a smaller studio based in sweden has developed their o
 
 For example HPL Engine 1 was used for the Penumbra series and new iterations were made as new games such as Soma and Game series such as Amnesia came out. The newest version is HPL Engine 4 which is used in their development of Ontos (2027).
 
+
 ### Sources
 
 <https://www.remedygames.com/article/about-game-engines>
 <https://control.fandom.com/wiki/Northlight>
 <https://steamdb.info/tech/Engine/Frostbite/>
 <https://en.wikipedia.org/wiki/Frictional_Games>
-
+<https://news.xbox.com/en-us/2025/12/11/introducing-ontos-frictional-games-spiritual-successor-to-soma/>
