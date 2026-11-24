@@ -3,6 +3,7 @@
 Why is software green yet.
 Bisnes motivation and long thinking is why we are not there yet.
 In enterprices focus is building new features as fast as possible.
+
 ## Definition
 
  It focuses on the environmental dimension of sustainability.
@@ -55,4 +56,8 @@ According to benchmarks Rust based Actix, C# based ASP.net and Go Based Fiber ar
 ## Source
 
 Green coding: Considering environmental sustainability while building software.
-Hrivelä Jaakko, diblomityö.
+Hrivelä Jaakko, diplomityö.
+
+## Author
+
+Milja
