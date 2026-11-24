@@ -2,11 +2,25 @@
 
 ## UI/UX
 
-Saana
+User Interface / User Experience. 
+Käyttöliittymä / käyttökokemus. Suunnitteluun kuuluu myös visuaalinen design, käytettävyys sekä jatkokehitys.
 
+## Mihin? 
+Mobiilisovellukset, verkkosivut, muut digitaaliset palvelut.
+Fyysiset laitteet: älylaitteet, kodinkoneet, automaatit, autojen näytöt.
+
+##
+
+Käyttöliittymän suunnittelu asiakaslähtöisesti ja käyttäjäystävällisesti 
+Lisää yleistä käyttömukavuutta
+Helppo navigoida kohteessa, tarvitut toiminnot löytyvät
+Suunnittelu asiakaslähtöisesti? Vastataan tarpeisiin, jotta vältyttäisiin turhilta 
+
+Suunnittelulla säästetään aikaa, kun tarvittavat toiminnot  ja visuaalinen ilme suunnitellaan jo valmiiksi ennen varsinaista koodausta
+- Testaaminen ennen julkaisua, jotta mahdolliset virheet ja toiminnallisuudet voidaan korjata ennenkuin tuote pääsee asiakkaalle.
 
 ## Frontend-kehitys
-Sofia
+
 
 Ohjelmistot koostuvat monista eri teknologioista, ja ohjelmisto voidaan yleensä jakaa frontend- ja backend-osioihin. Nämä osat yhdessä muodostavat ohjelmiston kokonaisuuden. Full stack -kehityksellä tarkoitetaan sekä frontendin että backendin kehittämistä.
 
