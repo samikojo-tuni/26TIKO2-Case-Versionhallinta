@@ -12,15 +12,22 @@ Ammattilaiskoulutuksen simulaattoriesimerkkejä:
 - Packet Tracer
 - Mahdolliset simulaatiot joita voi tehdä virtuaalikoneiden avulla
 - epämääräinen kunniamaininta: sään ennustuksen simulaattorit
+- arkkitehtuuriset simulaattorit
 
 Yleisesti nämä ammattiin kouluttavat simulaattorit ovat eri koneiden ja ajoneuvojen käyttöön ja ajamisen harjoittamiseen. Muihin aloihin tai taitoihin ei oikein löydy virallisia simulaattoreita.
 Tämä tekee järkeä, koska ajoneuvot ja koneet ovat kalliita ja voivat virheiden sattuessa aiheuttaa paljon suurta vahinkoa.
 
 metsäkoneiden käytön harjotteluun simulaattorei: <https://www.ponsse.com/fi/tuotteet/simulaattorit>
 
+robottien tai teollisuuden koneiden ja masiinojen rakentamisen, configuroinnin ja toiminnan simulaattori: <https://eurometalli.com/simulaatio-ja-optimointityokalut-tuovat-turvaa-ja-tehostavat-tyostokoneinvestointia/>
+
 täällä kerrotaan vähän yhdestä ajosimulaattorista: <https://www.uv.es/uvweb/university-research-institute-traffic-road-safety-INTRAS/en/research-groups/sintec/driving-simulator-1285892946085.html>
 
+lentosimulaattori (virallinen) käytetään pilottien koulutukseen: <https://fi.wikipedia.org/wiki/X-Plane>
+
 ydinvoimalasimulaattorista: <https://wiki.helsinki.hacklab.fi/Reaktorisimulaattori>
+
+sairaalasimulaatio <https://www.hus.fi/ammattilaiselle/ammattilaisten-palvelut-ja-ohjeet/hus-simulaatiokeskus>
 
 täällä kans hyödyllistä infoo simulaatioista: <https://fi.wikipedia.org/wiki/Simulointi>
 
