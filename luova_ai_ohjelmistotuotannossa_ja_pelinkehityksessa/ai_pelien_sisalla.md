@@ -6,6 +6,6 @@ Videopeliteollisuus on kehittynyt nopeasti, ja pelaajat odottavat peleiltä yhä
 ## Älykkäät NPC-hahmot pelien tekoälyn osana
 Tekoälyn kehityksen myötä, videopelien NPC-hahmojen on mahdollista reagoida entistä älykkäämmin pelaajan päätöksiin ja liikkeisiin. NPC-hahmojen on mahdollista muistaa palaajan aikaisemmin tekemiään toimintoja kuten keskusteluja sekä reagoida pelaajien käytökseen, jotka tekevät pelikokemuksesta paremman ja realistisemman.
 
-##
-
 ## Yhteenveto
+
+Yhteenvetona voidaan todeta, että tekoälyn avulla NPC-hahmoista voidaan luoda aiempaa monipuolisempia ja vuorovaikutteisempia. Tämä lisää pelien syvyyttä sekä saa pelaajan kokemaan pelimaailman elävämmäksi ja aidommaksi.
