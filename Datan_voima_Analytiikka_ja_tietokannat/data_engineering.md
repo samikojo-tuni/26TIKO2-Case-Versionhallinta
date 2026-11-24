@@ -298,12 +298,9 @@ olisi huomattavasti vaikeampaa.
 
 ### 6.1 Yhteenveto
 
-- Mitä Big Data tarkoittaa?
-- Mikä on dataputki?
-- Miten data liikkuu järjestelmissä?
-- Mitkä ovat tärkeimmät menetelmät ja teknologiat?
-- Mitä hyötyjä ja haasteita Big Dataan liittyy?
-- Miksi aihe on tärkeä ICT-alan ammattilaisille?
+Big Data tarkoittaa suuria tietomääriä, joita syntyy Internetissä, pilvipalveluissa ja IoT-laitteissa. Dataputkien avulla kerätään, siirretään, käsitellään ja tallennetaan dataa eri järjestelmien välillä. Data liikkuu yleensä sen lähteestä dataputkien kautta tietovarastoon, jossa sitä voidaan käyttää päätöksenteossa ja palveluiden kehittämisessä. Tärkeimpiä datan käsittely menetelmiä ovat ETL-prosessi, Batch prosessing ja Stream processing. Yleisimpiä teknologioita ovat Hadoop, Apache Spark ja Apache Kafka.
+
+Big Datan suurimpia hyötyjä ovat parempi tiedon hyödyntäminen ja tehokkaampi päätöksenteko. Haasteita taas ovat tietoturva, datan määrä ja laatu. ICT-alan ammattilaisille tämä aihe on tärkeä, koska yhä useammat digitaaliset palvelut ja ohjelmistot perustuvat suurten tietomäärien tehokkaaseen käsittelyyn.
 
 ### 6.2 Lähteet
 

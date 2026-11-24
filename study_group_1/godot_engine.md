@@ -12,12 +12,12 @@ Godot has multitude of features to make both 2D and 3D games, with seperate rend
 
 Godot also has its own scripting language **GDScript**, that was made to be much simpler language for beginners, taking influence from **Python** language.
 
-Godot advertises itself to having **"Intuitive scene-driven design"**, where you can create complex and reusable scenes with nodes. 
+Godot advertises itself to having **"Intuitive scene-driven design"**, where you can create complex and reusable scenes with nodes.
 
 You can also make your own component within the engine using the scenes. You can shares these to other developers as addons and templates.
 
 ## Community
-Godot has its own Godot Forum, Discord and Reddit. Godot also has its own Official Social Network such as Bluesky, Mastodon, Youtube and Twitch. 
+Godot has its own Godot Forum, Discord and Reddit. Godot also has its own Official Social Network such as Bluesky, Mastodon, Youtube and Twitch.
 
 As Godot is free and open source community-driven game engine, so developers can volunteer to contribute to Godot engines development through offering code, giving feedback, testing or donating money.
 
@@ -25,6 +25,7 @@ Godot also has it's own document showcasing Godot Engines features. These docume
 
 ## Notable games
 - Slay the Spire 2
+- Brotato
 - Cruelty Squad
 - Dome Keeper
 - Buckshot Roulette
